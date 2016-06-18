@@ -1,16 +1,23 @@
+a {
+    text-decoration: none;
+    color: #323356;
+}
+
 body {
     margin: 0;
     font-family: Helvetica;
     color:#171717;
 }
-header {
-    height: px;
+.header {
     padding: 15px;
     font-size: 30px;
-    box-sizing: border-box;
     text-align: center;
     background: #291833;
     color: white;
+    position: fixed;
+    margin: auto;
+    width: 100%;
+
 }
 aside {
     height: calc(100vh - 100px);
@@ -39,33 +46,59 @@ aside nav ul li a:hover {
     background: white;
     cursor: pointer;
 }
-main {
-    height: calc(100vh - 100px);
-    width: calc(100% - 150px);
-    float: left;
-    padding: 25px;
-    box-sizing: border-box;
-    overflow: auto;
+.main {
+    padding-top: 100px;
+    width: 95%;
 }
-section {
-    margin: 0 auto;
-    max-width: 800px;
-}
-section article {
+
+article {
     margin-bottom: 70px;
 }
-section article p {
+article p {
     text-align: justify;
 }
-footer {
+.footer {
     height: 35px;
     padding: 10px;
-    box-sizing: border-box;
-    clear: both;
+    margin: auto;
     text-align: center;
     background: #291833;
+    color: white;
+}
+
+.footer a {
+
     color: white;
 }
 .your_img {
     width: 800px;
 }
+
+.dni td{
+    font-size: 10px;
+    width: 150px;
+    padding: 10px;
+    background-color: white;
+}
+
+td {
+    color: #323356;
+    text-align: center;
+    background-color: #323356;
+    transition: 0.5s;
+
+}
+
+td a {
+    display: block;
+    padding: 15px;
+    font-size: 25px;
+}
+
+
+td:hover {
+    color: #323356;
+    background-color: white;
+
+}
+
