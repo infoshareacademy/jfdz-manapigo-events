@@ -67,6 +67,40 @@ article p {
 
 .your_img {
     width: 800px; }
+.obraz:hover {
+    background-color: aqua; /*to sie dzieje z DIVem jak na niego najezdzam kursorem*/
+    -webkit-filter: grayscale(0); /*obrazek w DIVie jest czarno bialy*/
+
+.obraz {
+    transition: background-color 3s linear 1s; /*tlo sie zmienia z jakims tam opoznieniem, ktore podaje w s (sekundy*/
+    -webkit-filter: grayscale(100%); /*obrazek w DIVie jest kolorowy*/
+    background-color: cadetblue;
+    width: 400px;
+    height: 300px;
+    color: crimson;
+    border: solid 10px crimson;
+    padding: /*margines wewnetrzny aplikowany na wszystkie wartosci elementu*/ 30px;
+    margin: /*margines zewnetrzny aplikowany na wszystkie wartosci elementu*/ 10px;
+    /* zeby zastosowac rozne wartosci, stosujemy padding-top:... padding-bottom:...
+    zeby uzyc skrotow w notacji -->  margin: 10px 20px 30px 40px; wartosci przypisane zgodnie z ruchem wskazowek zegara */
+    font-family: Arial, /*jak poinformowac render zeby uzyc domyslnej czcionki...? fonty szeryfowe i nieszeryfowe:*/ sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 36px;
+    text-align: center;
+    /*wstawianie obrazka jako tla w DIVie */
+    background-image: url(../image/most.jpg);/*obrazek wyswietlany sasiadujaco*/
+    background-repeat: no-repeat; /*obrazek zostanie wyswietlony tylko raz*/
+    background-size: /*300px 400px; nadaje rozmiar obrazkowi */ cover; /*obrazek sie dopasuje, ale moze zostac uciety*/
+    /*contain; dopasowuje rozmiar obrazka, ale nie rozciaga go na szerokosc*/
+    background-position: /*domyslnie obrazek zaczyna sie zawsze z lewego gotnego rogu*/ 30px /*odsuniecie od lewej krawedzi*/ 40px;/*dsuniecie od gornej krawedzi*/
+    border-radius: 10px; /*zaokraglenie bokow DIVa*/
+    box-shadow: 3px 18px 120px 20px; /*cienie*/
+    text-shadow: 5px 5px 5px; /*cienie*/
+    transform: rotate(3deg); /*zakrzywia DIVa*/
+
+}
 
 /*.dni td {
     font-size: 10px;
