@@ -1,5 +1,11 @@
 body {
     font-family: Century Gothic;
+    background-image: url("image/FrW4RJXT06kQzD4Jvj3x__MG_1292-Edit.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    opacity: 0.8;
+    width: 100%;
+   height:100%;
 }
 
 #header {
@@ -163,7 +169,7 @@ ol > li:hover > a {
 }
 
 .container {
-    position: relative;
+    position: absolute;
 }
 
 .topright {
@@ -257,6 +263,8 @@ li.calendar {
     left: 400px;
     right: 200px;
     z-index: 1;
-    position: absolute;
+    position: relative;
     text-align: justify;
+    width:850px;
+    height:350px;
 }
