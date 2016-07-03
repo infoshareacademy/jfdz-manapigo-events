@@ -1,3 +1,9 @@
+@font-face
+{
+    font-family: Lato_Regular;
+    src: url("../fonts/Lato_Regular.ttf");
+}
+
 .form-group {
     margin-bottom: 15px;
     width: 95%;
@@ -42,4 +48,20 @@ label {
     color: white;
     background-color: #555;
     cursor: pointer;
+}
+
+#footer {
+    font-size: 10px;
+    color: #E8E3E6;
+    text-align: center;
+    position:fixed;
+    left: 0px;
+    height:25px;
+    line-height: 25px;
+    width:100%;
+    background:#3E3F40;
+    bottom: 0px
+}
+#footer span{
+    margin: 0 20px
 }

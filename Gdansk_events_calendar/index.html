@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Gdańsk</title>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="keywords" content="Manapigo">
-<meta name="description" content="Manapigo">
-<meta name="author" content="Manapigo Team">
+    <head>
+        <title>Gdańsk - event calendar</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Manapigo">
+        <meta name="description" content="Manapigo">
+        <meta name="author" content="Manapigo Team">
 
-<link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
 
-<link rel="Shortcut icon" href="img/favicon64.ico"/>
-</head>
-<body>
-<form action="" method="post">
-    <div class="form-group">
-        <label for="name">Imię i Nazwisko:</label>
-        <input type="text" class="form-control" id="name" pattern="[A-Za-z ]{1,40}$" required/>
-    </div>
-    <div class="form-group">
-        <label for="email">E-mail:</label>
-        <input type="email" class="form-control" id="email" required/>
-    </div>
-    <div class="form-group">
-        <label for="nrtel">Nr telefonu:</label>
-        <input type="text" class="form-control" id="nrtel" pattern="[+0-9 ]{7,20}$" required/>
-    </div>
-    <div class="form-group">
-        <label for="message">Treść wiadomości:</label>
-        <textarea class="form-control" id="message" placeholder="Treść wiadomości" required></textarea>
-    </div>
-    <div class="button-form">
-        <input type="submit" name="submit" id="submit" value="Wyślij wiadomość"/>
-    </div>
-    <div class="button-form">
-        <input type="reset" name="reset" id="reset" value="Wyczyść pola"/>
-    </div>
-</form>
+        <link rel="Shortcut icon" href="img/favicon64.ico"/>
+    </head>
 
-</body>
+    <body>
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="name">Imię i Nazwisko:</label>
+                <input type="text" class="form-control" id="name" pattern="[A-Za-z ]{1,40}$" required/>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" required/>
+            </div>
+            <div class="form-group">
+                <label for="nrtel">Nr telefonu:</label>
+                <input type="text" class="form-control" id="nrtel" pattern="[+0-9 ]{7,20}$" required/>
+            </div>
+            <div class="form-group">
+                <label for="message">Treść wiadomości:</label>
+                <textarea class="form-control" id="message" placeholder="Treść wiadomości" required></textarea>
+            </div>
+            <div class="button-form">
+                <input type="submit" name="submit" id="submit" value="Wyślij wiadomość"/>
+            </div>
+            <div class="button-form">
+                <input type="reset" name="reset" id="reset" value="Wyczyść pola"/>
+            </div>
+        </form>
+
+        <div id="footer">
+            &copy; 2016 MaNaPiGo<span>|</span>contact<span>|</span>alamakota
+        </div>
+    </body>
 </html>
