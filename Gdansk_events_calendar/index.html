@@ -17,19 +17,19 @@
         <form action="" method="post">
             <div class="form-group">
                 <label for="name">Imię i Nazwisko:</label>
-                <input type="text" class="form-control" name="name" pattern="[A-Za-z ]{1,40}$" required/>
+                <input type="text" class="form-control" id="name" pattern="[A-Za-z ]{1,40}$" required/>
             </div>
             <div class="form-group">
                 <label for="email">E-mail:</label>
-                <input type="email" class="form-control" name="email" required/>
+                <input type="email" class="form-control" id="email" required/>
             </div>
             <div class="form-group">
                 <label for="nrtel">Nr telefonu:</label>
-                <input type="text" class="form-control" name="nrtel" pattern="[+0-9 ]{7,20}$" required/>
+                <input type="text" class="form-control" id="nrtel" pattern="[+0-9 ]{7,20}$" required/>
             </div>
             <div class="form-group">
                 <label for="message">Treść wiadomości:</label>
-                <textarea type="text" class="form-control" name="message" placeholder="Treść wiadomości" required/></textarea>
+                <textarea class="form-control" id="message" placeholder="Treść wiadomości" required></textarea>
             </div>
             <div class="button-form">
                 <input type="submit" name="submit" id="submit" value="Wyślij wiadomość"/>
@@ -39,5 +39,8 @@
             </div>
         </form>
 
+        <div id="footer">
+            &copy; 2016 MaNaPiGo<span>|</span>contact<span>|</span>alamakota
+        </div>
     </body>
 </html>
