@@ -1,5 +1,13 @@
 @font-face
 {
+    font-family: Selima;
+    src: url("../fonts/Selima.otf");
+}
+@font-face {
+    font-family: ElegantLux;
+    src: url("../fonts/ElegantLux-Mager.otf");
+}
+@font-face {
     font-family: Lato_Regular;
     src: url("../fonts/Lato_Regular.ttf");
 }
@@ -51,6 +59,7 @@ label {
 }
 
 #footer {
+    font-family: ElegantLux;
     font-size: 10px;
     color: #E8E3E6;
     text-align: center;
