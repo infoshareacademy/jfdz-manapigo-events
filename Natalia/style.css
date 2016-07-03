@@ -1,110 +1,262 @@
 body {
-    margin: 0;
-    font-family: Helvetica;
-    color:#171717;
+    font-family: Arial;
+    width: 100%;
+    height:100%;
+    background-image: url("image/FrW4RJXT06kQzD4Jvj3x__MG_1292-Edit.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
 }
-header {
-    height: px;
-    padding: 15px;
-    font-size: 30px;
-    box-sizing: border-box;
+#header {
+    font-size: 25px;
+    color: #E8E3E6;
+    width: 100%;
+    height: 60px;
     text-align: center;
-    background: #291833;
-    color: white;
-}
-    ol {
-        list-style-type:none;
-        padding:0;
-        margin:0;
-        font-size:18px;
-        height:2em;
-        line-height:2em;
-        text-align:center;
-    }
-    ol > li {
-        float:right;
-        background-color:#291833;
-        width:150px;
-    }
-    ol a {
-        display:block;
-        color: white;
-        text-decoration:none;
-        padding:0 5px;
-    }
-    ol > li > a:hover {
-        font-weight: bolder;
-    }
+    line-height: 60px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background:#3E3F40; /*szary*/
+    z-index: 2;
 
-    ol > li:hover > a {
-        color:#fff;
-    }
-    ol > li > ul {
-        list-style-type:none;
-        padding:0;
-        margin:0;
-    }
-    ol > li {
-        float:right;
-        background-color:#291833;
-        width:150px;
-        margin-left:1px;
-        height:2em;
-    }
 
-    ol > li:first-child {
-        margin-left:0;
-    }
-    ol > li > ul > li > a {
-        border-top:1px solid #291833;
-    }
-    ol {
-        background-color:#FFF;
-    }
+}
+#sideMenu {
+    font-size: 23px;
+    color: #948C96;
+    width: 10%;
+    height: 100%;
+    /*border: 1px solid black;*/
+    text-align: left;
+    top: 100px;
+    left: 30px;
+    position: fixed;
+}
 
-    ol > li > ul > li {
-        background-color:#291833;
-    }
+#obrazek {
+    /* TU MOZE BEDZIE OBRAZEK JEZELI NIE WYJDZIE Z DIV'EM CONTAINER - PATRZ INDEX.HTML */
+}
 
-    ol > li > ul > li:hover {
-        background-color:#182949;
-    }
+#footer {
+    font-size: 10px;
+    color: #E8E3E6;
+    text-align: center;
+    position:fixed;
+    /*left:0px;
+    bottom:0px;*/
+    height:25px;
+    line-height: 25px;
+    width:100%;
+    background:#3E3F40;/*szary*/
+    bottom: 0px
+}
 
-    ol > li > ul > li:hover a {
-        color:#fff;
-    }
-    ol > li > ul {
-        display:none;
-    }
 
-    ol > li:hover > ul {
-        display:block;
-    }
+#menu {
+    font-size: 20px;
+    color: #E8E3E6;
+    text-align: center;
+    min-width: 600px;
+    /*left: 0px;
+    top: 0px;
+    background: #f2fcf;*/
+    float: right;
 }
-main {
-    height: calc(100vh - 100px);
-    width: calc(100% - 150px);
-    float: left;
-    padding: 25px;
-    box-sizing: border-box;
-    overflow: auto;
+
+ol {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    font-size:large;
+    height:60px; /*wysokosc mojego menu*/
+    line-height:60px;
+    text-align:center;
+    float: right;
 }
-section {
-    margin: 0 auto;
-    max-width: 800px;
+
+ol > li {
+    background-color:#3E3F40;/*szary*/
+    width:150px;
 }
-section article {
-    margin-bottom: 70px;
+ol a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    padding:0 5px;
+
 }
-section article p {
-    text-align: justify;
+ol > li > a:hover {
+    color:#fff;
+
 }
-footer {
-    height: 35px;
+
+ol > li:hover {
+    background-color:#3E3F40;/*szary*/
+
+}
+
+ol > li > ul {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+
+}
+
+ol > li {
+    float:left;
+    background-color:#5F6061;/*jasny szary*/
+    width:150px;
+    margin-left:1px;
+
+}
+
+ol > li:first-child {
+    margin-left:0;
+
+}
+
+ol > li > ul > li > a {
+    border-top:1px solid #FFF;
+
+}
+
+ol {
+    background-color:#FFF;
+
+}
+
+ol > li > ul > li {
+    background-color:#5F6061;/*jasny szary*/
+
+}
+
+ol > li > ul > li:hover {
+    background-color:#3E3F40;/*szary*/
+
+}
+
+ol > li > ul > li:hover a {
+    color:#fff;
+
+}
+
+ol > li > ul {
+    display:none;
+}
+
+ol > li:hover > ul {
+    display:block;
+}
+
+ol > li {
+    float:left;
+    background-color:#3E3F40;/*szary*/
+    width:150px;
+    margin-left:1px;
+    height:60px;
+}
+
+ol > li:hover > a {
+    color:#fff;
+}
+
+.container {
+    position: static;
+}
+
+.topright {
+    position: absolute;
+    top: 200px;
+    right: 60px;
+    color: #5F6363;
+    font-size: 40px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+a {
+    text-decoration: none;
+    color: #5F6363;
+}
+
+a:hover {
+    font-weight: bold;
+    color: #726F73;
+}
+
+.kalendarz {
+    font-size: 15px;
+    color: #948C96;
+    top: 400px;
+    left: 400px;
+    right: 100px;
+
+    z-index: 1;
+    position: absolute;
+}
+
+h2 {
+    color: #5F6363;
+}
+
+.calendar {
+    list-style-type: none;
+    margin: 10px;
     padding: 10px;
-    box-sizing: border-box;
-    clear: both;
+    font-size: medium;
+    max-width: 1100px;
+}
+
+.calendar li {
+    background-color: #ddd;
+    margin: 10px;
+    padding: 15px 12px;
     text-align: center;
-    background: #291833;
-    color: white;
+}
+
+.calendar li:nth-child(6n+6) { /*SOBOTY odcien jasniejszy* - JAK ZROBIC ZEBY SIE KOLOROWAL CO 7 ELEMENT OD 6-TKI????*/
+    background-color: #FACDD0; /* KOLOR TYLKO DLA PRZYKLADU!!! grudzien, styczen luty WEEKENDY niebieskie; marzec kwiecien maj, WEEKENDY zielone; czerwiec, lipiec, sierpirn WEENENDY zolte; wrzesien pazdziernik listopad WEEKENDY rozowe */
+}
+
+.calendar li:nth-child(7n) { /*NIEDZIELE odcien ciemniejszy*/
+    background-color: #FA9DA4; /* KOLOR TYLKO DLA PRZYKLADU!!! grudzien, styczen luty WEEKENDY niebieskie; marzec kwiecien maj, WEEKENDY zielone; czerwiec, lipiec, sierpirn WEENENDY zolte; wrzesien pazdziernik listopad WEEKENDY rozowe */
+}
+
+li.calendar {
+    height: 10px;
+    background-color: transparent;
+    display: block;
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px)
+{
+    .calendar li {
+        width: 30px;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 800px)
+{
+    .calendar li {
+        width: 100px;
+        display: inline-block;
+    }
+}
+
+.tekst {
+    font-size: 18px;
+    color: #FF40A3;
+    top: 400px; /*sciagnac text w dol lub pozbyc sie go jak kalendarz jest wyswietlony*/
+    left: 400px;
+    right: 200px;
+    position: relative;
+    text-align: justify;
+    width:850px;
+    margin-bottom: 50px;
 }
