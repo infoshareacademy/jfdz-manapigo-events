@@ -1,4 +1,4 @@
-body {
+/*body {
     font-family: Arial;
     width: 100%;
     height:100%;
@@ -18,7 +18,7 @@ body {
     left: 0px;
     top: 0px;
     background:#3E3F40; /*szary*/
-    z-index: 2;
+    /*z-index: 2;
 
 
 }
@@ -28,7 +28,7 @@ body {
     width: 10%;
     height: 100%;
     /*border: 1px solid black;*/
-    text-align: left;
+ /*   text-align: left;
     top: 100px;
     left: 30px;
     position: fixed;
@@ -36,31 +36,54 @@ body {
 
 #obrazek {
     /* TU MOZE BEDZIE OBRAZEK JEZELI NIE WYJDZIE Z DIV'EM CONTAINER - PATRZ INDEX.HTML */
-}
+
 
 #footer {
-    font-size: 10px;
-    color: #E8E3E6;
+    padding: 1.5em 0em;
+    position: relative;
     text-align: center;
-    position:fixed;
-    /*left:0px;
-    bottom:0px;*/
-    height:25px;
-    line-height: 25px;
-    width:100%;
-    background:#3E3F40;/*szary*/
-    bottom: 0px
 }
 
+#footer span {
+    margin: 0 20px;
+}
 
-#menu {
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
+section:last-child, article:last-child {
+    margin-bottom:0px;
+}
+section, article {
+    margin-bottom: 3em;
+}
+header {
+    margin-bottom: 1.6em;
+
+}
+
+.byline {
+    font-size: 1em;
+    display: block;
+    margin: 1.5em 0 0 0;
+    padding: 0 0 1em 0;
+
+}
+
+.koniec {
+    font-size: 0.6em;
+}
+/*#menu {
     font-size: 20px;
     color: #E8E3E6;
     text-align: center;
     min-width: 600px;
     /*left: 0px;
     top: 0px;
-    background: #f2fcf;*/
+    background: #f2fcf;
     float: right;
 }
 
@@ -69,14 +92,14 @@ ol {
     padding:0;
     margin:0;
     font-size:large;
-    height:60px; /*wysokosc mojego menu*/
+    height:60px; /*wysokosc mojego menu
     line-height:60px;
     text-align:center;
     float: right;
 }
 
 ol > li {
-    background-color:#3E3F40;/*szary*/
+    background-color:#3E3F40;/*szary
     width:150px;
 }
 ol a {
@@ -94,7 +117,7 @@ ol > li > a:hover {
 ol > li:hover {
     background-color:#3E3F40;/*szary*/
 
-}
+/*}
 
 ol > li > ul {
     list-style-type:none;
@@ -105,7 +128,7 @@ ol > li > ul {
 
 ol > li {
     float:left;
-    background-color:#5F6061;/*jasny szary*/
+    background-color:#5F6061;
     width:150px;
     margin-left:1px;
 
@@ -127,12 +150,12 @@ ol {
 }
 
 ol > li > ul > li {
-    background-color:#5F6061;/*jasny szary*/
+    background-color:#5F6061;
 
 }
 
 ol > li > ul > li:hover {
-    background-color:#3E3F40;/*szary*/
+    background-color:#3E3F40;
 
 }
 
@@ -151,7 +174,7 @@ ol > li:hover > ul {
 
 ol > li {
     float:left;
-    background-color:#3E3F40;/*szary*/
+    background-color:#3E3F40;/
     width:150px;
     margin-left:1px;
     height:60px;
@@ -219,13 +242,10 @@ h2 {
     text-align: center;
 }
 
-.calendar li:nth-child(6n+6) { /*SOBOTY odcien jasniejszy* - JAK ZROBIC ZEBY SIE KOLOROWAL CO 7 ELEMENT OD 6-TKI????*/
-    background-color: #FACDD0; /* KOLOR TYLKO DLA PRZYKLADU!!! grudzien, styczen luty WEEKENDY niebieskie; marzec kwiecien maj, WEEKENDY zielone; czerwiec, lipiec, sierpirn WEENENDY zolte; wrzesien pazdziernik listopad WEEKENDY rozowe */
-}
+.calendar li:nth-child(6n+6)
 
-.calendar li:nth-child(7n) { /*NIEDZIELE odcien ciemniejszy*/
-    background-color: #FA9DA4; /* KOLOR TYLKO DLA PRZYKLADU!!! grudzien, styczen luty WEEKENDY niebieskie; marzec kwiecien maj, WEEKENDY zielone; czerwiec, lipiec, sierpirn WEENENDY zolte; wrzesien pazdziernik listopad WEEKENDY rozowe */
-}
+.calendar li:nth-child(7n) {
+    background-color: #FA9DA4;
 
 li.calendar {
     height: 10px;
@@ -252,7 +272,7 @@ li.calendar {
 .tekst {
     font-size: 18px;
     color: #FF40A3;
-    top: 400px; /*sciagnac text w dol lub pozbyc sie go jak kalendarz jest wyswietlony*/
+    top: 400px;
     left: 400px;
     right: 200px;
     position: relative;
@@ -260,3 +280,4 @@ li.calendar {
     width:850px;
     margin-bottom: 50px;
 }
+*/
