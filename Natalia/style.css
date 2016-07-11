@@ -1,114 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway|Indie+Flower|Lobster|Josefin+Sans|Pacifico|Gloria+Hallelujah&subset=latin-ext);
+
 body {
-    background-color: #fff;
-    font-family: Raleway;
+    background-image: url('image/chalupy.jpg');
+    font-family: 'Raleway';
     margin: 0;
 }
-.hero {
-    background: #fff;
-    height: 200px;
-    line-height: 160px;
-    font-family: Lobster;
-    font-size: 50px;
-    position: relative;
-    top: 0px;
-    overflow: hidden;
-    text-overflow: ellipsis;
 
-}
+
 .container {
+    width: 100%;
     max-width: 700px;
-    margin: 20px auto;
+    margin: 1px auto;
     border-radius: 4px;
-    background-color: #fff;
-    padding: 20px;
-    overflow: hidden;
-    position: relative;
-}
-
-.container:hover {
-    overflow: visible;
+    background: none;
+    padding: 10px;
+    padding-top: 20px;
 }
 .nav {
-    text-align: center;
-    background: #fff;
+    text-align: right;
+    background: none;
+    padding-top: 10px;
+    padding-right: 20px;
 }
 a {
-    padding: 20px;
+    padding: 10px;
+    color: #000;
     text-decoration: none;
     display: inline-block;
 }
 a:hover {
-    color: #C70000;
+    color: #F20C23;
+    text-decoration: ButtonShadow;
 }
-h1, .footer {
+
+.zdjecie1 {
+    opacity: 0.3;
+}
+
+.zdjecie1:hover {
+    opacity: 1.0;
+}
+p {
+    margin-left: 170px;
+    padding: 40px;
+}
+h1 {
     text-align: center;
+    color: #000;
     margin: 0;
     padding: 20px;
+    font-family: Raleway;
+    font-size: 110px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+h2 {
+    text-align: center;
+    font-family: Pacifico;
+    font-size: 30px;
 }
 
-p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+h3 {
+    font-family: Raleway;
+    font-size: 25px;
+
 }
 
-p:hover {
-    overflow: visible;
-    text-overflow: ellipsis;
+h4 {
+    font-family: Pacifico;
+    font-size: 30px;
+    text-align: center;
 }
+
 #footer {
     padding: 1.5em 0em;
-    position: relative;
+
     text-align: center;
-    font-family: ElegantLux;
+    font-family: Raleway;
 }
 
 #footer span {
     margin: 0 20px;
 }
 
-.container {
+.container1 {
     margin-left: auto;
     margin-right: auto;
-    width: 960px;
+    width: auto;
 }
 
 section, article {
-    margin-bottom: 0.5em;
+    margin-bottom: 3em;
 
 }
 header {
-    margin-bottom: 0.5em;
+    margin-bottom: 1.2em;
     text-align: center;
 }
 
 .byline {
     font-size: 1em;
     display: block;
-    margin: 1.5em 0 0 0;
+
     padding: 0 0 1em 0;
 }
 
 .koniec {
-    font-size: 0.6em;
-}
-.rozmycie {
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    -o-filter: blur(1px);
-    -ms-filter: blur(1px);
-    filter: blur(1px);
-}
-
-.rozmycie:hover {
-    -webkit-filter: blur(0px);
-    -moz-filter: blur(0px);
-    -o-filter: blur(0px);
-    -ms-filter: blur(0px);
-    filter: blur(0px);
-}
-
-.a{
-    color: black;
-    text-decoration: none;
+    font-size: 0.8em;
 }
