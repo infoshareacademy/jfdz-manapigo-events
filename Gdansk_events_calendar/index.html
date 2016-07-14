@@ -9,6 +9,7 @@
         <meta name="author" content="Manapigo Team">
 
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/header.css">
 
         <link rel="Shortcut icon" href="img/favicon64.ico"/>
 
@@ -16,7 +17,93 @@
     </head>
 
     <body>
-        <form action="" method="post">
+
+    <header>
+
+        <div class="slade-container">
+            <ul class="slides">
+                <input type="radio" name="radio-btn" id="img-1" checked />
+                <li class="container">
+                    <div class="slide">
+                        <img src="img/image-03.jpg" />
+                        <figcaption>
+                            Tylko u nas najlepsze imprezy,wydarzenia w Gdańsku ! Zapraszamy do komentowania i wysyłania nam zdjęć na nasza skrzynke pocztową  . Najlepsze zdjęcia i relacje z najnowszych wydarzeń
+                            tylko na  GdańskieEventy.pl.
+                        </figcaption>
+                    </div>
+                    <div class="nav">
+                        <label for="img-4" class="prev">&#x2039;</label>
+                        <label for="img-2" class="next">&#x203a;</label>
+                    </div>
+                </li>
+
+                <input type="radio" name="radio-btn" id="img-2" />
+                <li class="container">
+                    <div class="slide">
+                        <img src="img/image-01.jpg" />
+                        <figcaption>
+                            Tylko u nas najlepsze imprezy,wydarzenia w Gdańsku ! Zapraszamy do komentowania i wysyłania nam zdjęć na nasza skrzynke pocztową  . Najlepsze zdjęcia i relacje z najnowszych wydarzeń
+                            tylko na  GdańskieEventy.pl.
+                        </figcaption>
+                    </div>
+                    <div class="nav">
+                        <label for="img-1" class="prev">&#x2039;</label>
+                        <label for="img-3" class="next">&#x203a;</label>
+                    </div>
+                </li>
+
+                <input type="radio" name="radio-btn" id="img-3" />
+                <li class="container">
+                    <div class="slide">
+                        <img src="img/image-02.jpg" />
+                        <figcaption>
+                            Tylko u nas najlepsze imprezy,wydarzenia w Gdańsku ! Zapraszamy do komentowania i wysyłania nam zdjęć na nasza skrzynke pocztową  . Najlepsze zdjęcia i relacje z najnowszych wydarzeń
+                            tylko na  GdańskieEventy.pl.
+                        </figcaption>
+                    </div>
+                    <div class="nav">
+                        <label for="img-2" class="prev">&#x2039;</label>
+                        <label for="img-4" class="next">&#x203a;</label>
+                    </div>
+                </li>
+
+                <input type="radio" name="radio-btn" id="img-4" />
+                <li class="container">
+                    <div class="slide">
+                        <img src="img/image-01.jpg" />
+                        <figcaption>
+                            Tylko u nas najlepsze imprezy,wydarzenia w Gdańsku ! Zapraszamy do komentowania i wysyłania nam zdjęć na nasza skrzynke pocztową  . Najlepsze zdjęcia i relacje z najnowszych wydarzeń
+                            tylko na  GdańskieEventy.pl.
+                        </figcaption>
+                    </div>
+                    <div class="nav">
+                        <label for="img-3" class="prev">&#x2039;</label>
+                        <label for="img-1" class="next">&#x203a;</label>
+                    </div>
+                </li>
+
+                <li class="nav-dots">
+                    <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                    <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                    <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                    <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <div class="icon">
+                <input type="checkbox" title="menu">
+                <div class="line"></div>
+            </div>
+
+            <div class="center">
+
+             </div>
+        </div>
+    </header>
+
+    <form action="" method="post">
             <div class="form-group">
                 <label for="name">Imię i Nazwisko:</label>
                 <input type="text" class="form-control" id="name" pattern="[A-Za-z ]{1,40}$" required/>
@@ -63,5 +150,6 @@
                Copyright &copy; 2016 MaNaPiGo<span>|</span><a href="">Contact</a><span>|</span><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Terms and Conditions</a>
             </div>
         </div>
+
     </body>
 </html>
