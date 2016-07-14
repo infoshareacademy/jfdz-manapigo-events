@@ -5,13 +5,79 @@
 }
 
 h2{
-  font-family: Poppins-medium, sans-serif;
+  font-family: "brandon-grotesque", sans-serif;
   color:white;
   font-size: 78px;
   padding:0 ;
 
 
 }
+menu .center
+{
+
+  position:absolute;
+  top:14%;
+  right:20%;
+  margin:30px;
+
+
+
+}
+
+
+.center span{
+  position:absolute;
+  top:30px;
+  right:29%;
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  letter-spacing: 4.5px;
+  color:white;
+
+}
+
+.center p
+{
+  position:absolute;
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 3.5px;
+  color:white;
+  top:18%;
+  margin:20px;
+
+
+}
+
+
+.center .btnp
+{
+  position:absolute;
+  top:49.6% ;
+  right:32%;
+  cursor: pointer;
+  border: 3px solid #00d500;
+  color: #00d500;
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  padding: 8px 25px;
+  text-transform: uppercase;
+  margin:20px;
+
+}
+
+.btnp:hover
+{
+
+background-color:#00d500 ;
+  color:white;
+
+}
+
 .menu-container
 {
   position: fixed;
@@ -53,7 +119,7 @@ header
   float:left;
   width:50%;
   height:100%;
-  margin-top:150px ;
+  margin-top:100px ;
 
 }
 
@@ -67,10 +133,10 @@ header:after
 .slides
 {
   padding: 0;
-  width: 750px;
+  width: 690px;
   height: 420px;
   display: block;
-  margin: 0 auto;
+  margin: 30px ;
   position: relative;
 }
 
@@ -95,7 +161,7 @@ header:after
 {
   top: 0;
   opacity: 0;
-  width: 747px;
+  width: 690px;
   height: 420px;
   display: block;
   position: absolute;
@@ -159,7 +225,7 @@ input:checked + .container .nav label
 .nav-dots
 {
   width: 100%;
-  bottom: 9px;
+  bottom: 6px;
   height: 11px;
   display: block;
   position: absolute;
@@ -181,7 +247,7 @@ input:checked + .container .nav label
 .nav-dots .nav-dot:hover
 {
   cursor: pointer;
-  background-color: lawngreen;
+  background-color: #00d500;
 }
 
 figcaption
@@ -206,7 +272,7 @@ input#img-2:checked ~ .nav-dots label#img-dot-2,
 input#img-3:checked ~ .nav-dots label#img-dot-3,
 input#img-4:checked ~ .nav-dots label#img-dot-4
 {
-  background: greenyellow;
+  background:#00d500;
 }
 
 .icon {
@@ -216,7 +282,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4
   width: 70px;
   height: 70px;
   border-radius: 100%;
-  border:solid 3px blueviolet;
+  border:solid 3px #00d500;
 
 }
 
@@ -256,7 +322,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4
   left:10px;
   width: 70%;
   height: 4px;
-  background: blueviolet;
+  background: #00d500;
   margin-top: 10px;
   transition: all 0.1s;
 
@@ -267,7 +333,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4
     width: 100%;
     left:0;
     height: 4px;
-    background:blueviolet;
+    background:#00d500;
     top: -12px;
     transition: all 0.3s;
   }
