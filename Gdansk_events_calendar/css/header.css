@@ -1,6 +1,16 @@
 * {
   margin: 0; }
 
+#star1 {
+  position: relative;
+  top: 6%;
+  right: 17%; }
+
+#star2 {
+  position: relative;
+  top: 6%;
+  right: -18%; }
+
 h2 {
   font-family: "brandon-grotesque", sans-serif;
   color: white;
@@ -17,11 +27,12 @@ menu .center {
   position: absolute;
   top: 30px;
   right: 29%;
-  font-family: "brandon-grotesque", sans-serif;
+  font-family: "Pacifico", sans-serif;
   font-weight: 700;
   font-size: 56px;
   letter-spacing: 4.5px;
-  color: white; }
+  color: white;
+  margin: 10px; }
 
 .center p {
   position: absolute;
@@ -94,7 +105,7 @@ header:after {
   width: 690px;
   height: 420px;
   display: block;
-  margin: 30px;
+  margin: 5%;
   position: relative; }
 
 .slide img {
