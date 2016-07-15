@@ -152,15 +152,15 @@ h3 {
 
 .center .btnp {
   position: absolute;
-  top: 60%;
-  right: 18%;
+  top: 50%;
+  right: 22%;
   cursor: pointer;
   border: 3px solid #00d500;
   color: #fff;
   font-family: Raleway;
   font-weight: 700;
   font-size: 19px;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   padding: 8px 25px;
   text-transform: uppercase;
   margin: 20px; }
