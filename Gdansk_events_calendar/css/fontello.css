@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot?8783306');
-  src: url('../font/fontello.eot?8783306#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?8783306') format('woff2'),
-       url('../font/fontello.woff?8783306') format('woff'),
-       url('../font/fontello.ttf?8783306') format('truetype'),
-       url('../font/fontello.svg?8783306#fontello') format('svg');
+  src: url('../fontello/font/fontello.eot?80842882');
+  src: url('../fontello/font/fontello.eot?80842882#iefix') format('embedded-opentype'),
+       url('../fontello/font/fontello.woff2?80842882') format('woff2'),
+       url('../fontello/font/fontello.woff?80842882') format('woff'),
+       url('../fontello/font/fontello.ttf?80842882') format('truetype'),
+       url('../fontello/font/fontello.svg?80842882#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?8783306#fontello') format('svg');
+    src: url('../font/fontello.svg?80842882#fontello') format('svg');
   }
 }
 */
@@ -55,14 +55,16 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-star:before { content: '\e800'; font-size:50px;color:#00d500;margin:10px;} /* '' */
-.icon-star-1:before { content: '\e801'; font-size:50px; } /* '' */
+.icon-star:before { content: '\e800';font-size:50px;color:#00d500;margin:10px; } /* '' */
+.icon-star-1:before { content: '\e801'; } /* '' */
 .icon-star-2:before { content: '\e802'; } /* '' */
 .icon-menu-outline:before { content: '\e803'; } /* '' */
 .icon-star-empty:before { content: '\e804'; } /* '' */
 .icon-th-large:before { content: '\e805'; } /* '' */
 .icon-th-list:before { content: '\e806'; } /* '' */
 .icon-indent-left:before { content: '\e807'; } /* '' */
+.icon-home-outline:before { content: '\e808'; } /* '' */
+.icon-home:before { content: '\e809';color: #008a00;font-size:30px;background-color: #00d500 } /* '' */
 .icon-fast-food:before { content: '\e815'; } /* '' */
 .icon-menu:before { content: '\f008'; } /* '' */
 .icon-menu-1:before { content: '\f0c9'; } /* '' */
