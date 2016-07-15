@@ -99,8 +99,15 @@ header {
 
 .koniec {
     font-size: 0.8em;
+    color: #23262B;
+    text-shadow: 1px 1px 1px #7E827A;
 }
 
+.logo {
+    width: 120px;
+    height: 120px;
+    margin: 2mm;
+}
 a {
     text-decoration: none;
     color: black;

@@ -1,3 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway|Indie+Flower|Lobster|Josefin+Sans|Pacifico|Gloria+Hallelujah&subset=latin-ext);
+
+@font-face
+{
+  font-family: Selima;
+  src: url("../fonts/Selima.otf");
+}
+@font-face {
+  font-family: ElegantLux;
+  src: url("../fonts/ElegantLux-Mager.otf");
+}
+@font-face {
+  font-family: Lato_Regular;
+  src: url("../fonts/Lato_Regular.ttf");
+}
+
 * {
   margin: 0; }
 
@@ -109,9 +125,9 @@ menu .center {
 
 .center span {
   position: absolute;
-  top: 30px;
+  top: 35px;
   right: 29%;
-  font-family: "Pacifico", sans-serif;
+  font-family: Raleway;
   font-weight: 700;
   font-size: 56px;
   letter-spacing: 4.5px;
@@ -120,22 +136,28 @@ menu .center {
 
 .center p {
   position: absolute;
-  font-family: "brandon-grotesque", sans-serif;
+  font-family: Raleway;
   font-weight: 700;
   font-size: 32px;
   letter-spacing: 3.5px;
   color: white;
-  top: 18%;
+  top: 30%;
   margin: 20px; }
+
+h3 {
+  font-family: Lobster;
+  font-size: 80px;
+  color: #fff;
+}
 
 .center .btnp {
   position: absolute;
-  top: 47%;
-  right: 32%;
+  top: 60%;
+  right: 18%;
   cursor: pointer;
   border: 3px solid #00d500;
-  color: #00d500;
-  font-family: "brandon-grotesque", sans-serif;
+  color: #fff;
+  font-family: Raleway;
   font-weight: 700;
   font-size: 19px;
   letter-spacing: 1.5px;
@@ -159,30 +181,37 @@ menu .center {
   height: 100%;
   top: 10%;
   right: 15%;
-  padding: 0; }
+  padding: 0;
+  font-family: Lobster;
+}
 
 header {
   width: 100%;
   height: 700px;
   background-size: cover;
   background-image: url("../img/ss2.jpg");
-  opacity: 1; }
+  z-index: -1;
+}
 
 .menu {
   float: left;
   width: 50%;
-  height: 100%; }
+  height: 100%;
+}
 
 .slade-container {
   float: left;
   width: 50%;
   height: 100%;
-  margin-top: 100px; }
+  margin-top: 100px;
+  font-size: 25px;
+}
 
 header:after {
   clear: both;
   content: '';
-  display: block; }
+  display: block;
+}
 
 .slides {
   padding: 0;
@@ -190,7 +219,8 @@ header:after {
   height: 420px;
   display: block;
   margin: 5%;
-  position: relative; }
+  position: relative;
+}
 
 .slide img {
   border: 4px solid black; }
@@ -268,7 +298,9 @@ input:checked + .container .nav label {
 
 .nav-dots .nav-dot:hover {
   cursor: pointer;
-  background-color: #00d500; }
+  background-color: #00d500;
+  margin-top: 50px;
+}
 
 figcaption {
   width: 100%;
@@ -276,20 +308,26 @@ figcaption {
   color: white;
   padding: 8px;
   position: absolute;
-  opacity: 0.8;
+  opacity: 0.7;
   bottom: -5px;
   left: 4px;
   top: 320px;
   right: 0;
-  line-height: 1.6em;
+  height: 60px;
+  line-height: 40px;
   box-sizing: border-box;
-  transition: .5s all; }
+  transition: .5s all;
+  font-family: Raleway;
+}
 
 input#img-1:checked ~ .nav-dots label#img-dot-1,
 input#img-2:checked ~ .nav-dots label#img-dot-2,
 input#img-3:checked ~ .nav-dots label#img-dot-3,
 input#img-4:checked ~ .nav-dots label#img-dot-4 {
-  background: #00d500; }
+  background: #00d500;
+  margin-top: 50px;
+
+}
 
 .icon {
   position: fixed;
