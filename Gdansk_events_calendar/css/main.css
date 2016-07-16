@@ -112,3 +112,30 @@ a {
     text-decoration: none;
     color: black;
 }
+
+.social{
+    background: none;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 30px;
+    left: 5px
+}
+
+.social1{
+    background: none;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 90px;
+    left: 5px
+}
+
+.social2 {
+    background: none;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 150px;
+    left: 5px;
+}
