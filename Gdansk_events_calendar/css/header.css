@@ -191,6 +191,7 @@ header {
   background-size: cover;
   background-image: url("../img/ss2.jpg");
   z-index: -1;
+  webkit-filter: blur(30px);
 }
 
 .menu {

@@ -17,6 +17,7 @@
 .form-group {
     margin-bottom: 15px;
     width: 95%;
+    margin-left: 0px;
 }
 label {
     display: inline-block;
@@ -40,6 +41,11 @@ label {
     -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.formularz {
+    padding-top: 100px;
+    width: 50%;
+    margin: auto;
 }
 .button-form input	{
     float: right;
