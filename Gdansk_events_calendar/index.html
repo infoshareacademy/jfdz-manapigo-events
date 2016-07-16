@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/fontello.css" type="text/css"/>
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/o_nas.css">"
 
         <link rel="Shortcut icon" href="img/favicon64.ico"/>
 
@@ -89,10 +90,10 @@
         </div>
 
         <div class="menu">
-         <!--   <div class="icon">
+            <div class="icon">
                 <input type="checkbox" title="menu">
                 <div class="line"></div>
-            </div>-->
+            </div>
 
             <div class="center">
                 <h3>Gdańsk</h3>
@@ -102,7 +103,7 @@
                 <i class="icon-star" id="star2"></i>
             </div>
 
-            <nav class="Nav">
+           <!-- <nav class="Nav">
                 <ul>
                     <p>Menu</p><li class="homix">
                     <i class="icon-home"></i>
@@ -115,11 +116,12 @@
                 </li>
 
                 </ul>
-            </nav>
+            </nav>-->
         </div>
     </header>
 
     <form action="" method="post">
+        <div class="content">
             <div class="form-group">
                 <label for="name">Imię i Nazwisko:</label>
                 <input type="text" class="form-control" id="name" pattern="[A-Za-z ]{1,40}$" required/>
@@ -137,18 +139,44 @@
                 <textarea class="form-control" id="message" placeholder="Treść wiadomości" required></textarea>
             </div>
             <div class="button-form">
-                <input type="submit" name="submit" id="submit" value="Wyślij wiadomość"/>
+                <input class="right" type="submit" name="submit" id="submit" value="Wyślij wiadomość"/>
+                <input class="right" type="reset" name="reset" id="reset" value="Wyczyść pola"/>
+                <div class="clear"></div>
             </div>
-            <div class="button-form">
-                <input type="reset" name="reset" id="reset" value="Wyczyść pola"/>
+        </div>
+    </form>
+
+    <section class="team">
+        <div class="content">
+            <h1>Meet the Team</h1>
+
+            <div class="team-member">
+                <h2>Marek</h2>
+                <div class="zdjecie zdjecie-marek"></div>
+                Entuzjasta nowych technologii oraz aktywnego spedzania wolnego czasu.
             </div>
-        </form>
+            <div class="team-member">
+                <h2>Natalia</h2>
+                <div class="zdjecie zdjecie-natalia"></div>
+                Nie ma rzeczy niemozliwych. Sa tylko te, ktore oczekuja od nas troche wiecej wysilku.
+            </div>
+            <div class="team-member">
+                <h2>Piotr</h2>
+                <div class="zdjecie zdjecie-piotr"></div>
+                Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim...
+            </div>
+            <div class="team-member">
+                <h2>Grzegorz</h2>
+                <div class="zdjecie zdjecie-grzegorz"></div>
+                Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim...
+            </div>
+        </div>
+    </section>
 
-
-        <div id="footer">
+    <div id="footer">
             <div class="container1">
                 <section>
-                        <h3><img class="logo" src="img/logo.png"/></a></h3>
+                        <h3><img class="logo" src="img/logo.png"/></h3>
                 <span class="byline">
                     Connect with us
                 </span>
@@ -166,7 +194,7 @@
         </div>
 
     <div class="social">
-        <a href="https://instagram.com" TARGET="_blank"><img src="img/Instagram.png" title="Znajdź nas na Instagram'ie"/></a><
+        <a href="https://instagram.com" TARGET="_blank"><img src="img/Instagram.png" title="Znajdź nas na Instagram'ie"/></a>
     </div>
     <div class="social1">
     <a href="https://www.facebook.com/" TARGET="_blank"><img src="img/fb.png" title="Znajdź nas na Facebook'u"/></a>
@@ -174,6 +202,7 @@
     <div class="social2">
         <a href="https://www.twitter.com/" TARGET="_blank"><img src="img/Twitter.png" title="Znajdź nas Twitterze"/></a>
     </div>
-    </body>
+        </div>
+
     </body>
 </html>

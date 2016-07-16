@@ -18,6 +18,13 @@
     margin-bottom: 15px;
     width: 95%;
 }
+
+
+.right {float:right;}
+.left {float:left;}
+.clear {clear: both;}
+
+
 label {
     display: inline-block;
     max-width: 100%;
@@ -41,8 +48,8 @@ label {
     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
-.button-form input	{
-    float: right;
+
+.button-form input {
     font-family: Raleway;
     font-size: 14px;
     margin-left: 20px;
