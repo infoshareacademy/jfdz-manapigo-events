@@ -24,6 +24,10 @@
 .left {float:left;}
 .clear {clear: both;}
 
+.formularz {
+    padding-top: 100px;
+    margin: auto;
+}
 
 label {
     display: inline-block;
