@@ -1,61 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My Page</title>
-    <link rel="stylesheet" type="text/css" href="o_nas.css">
-    <link href='https://fonts.googleapis.com/css?family=Raleway|Indie+Flower|Lobster|Josefin+Sans|Pacifico|Gloria+Hallelujah&subset=latin-ext' rel='stylesheet' type='text/css'>
-</head>
+<html>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="css/side_menu.css">
+<link rel="stylesheet" type="text/css" href="css/meet_the_team.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<link rel="stylesheet" type="text/css" href="css/side_soc_media_icons.css">
+
+<link href='https://fonts.googleapis.com/css?family=Raleway|Indie+Flower|Lobster|Josefin+Sans|Pacifico|Gloria+Hallelujah&subset=latin-ext' rel='stylesheet' type='text/css'>
 <body>
-<div class="background">
-    <div class="nav">
-        <a href="#homePage">home</a>
-        <a href="#thisPage">about us</a>
-        <a href="#contactPage">contact</a>
-    </div>
-<div class=team">
+
+<!-- SIDE MENU -->
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#"><b>KALENDARZ</b></a>
+    <a href="#"><b>O NAS</b></a>
+    <a href="#"><b>KONTAKT</b></a>
+    <a href="#"><b>GALERIA</b></a>
+</div>
+
+<div id="main">
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ MENU</span>
+</div>
+
+<!-- SIDE SOCIAL MEDIA ICONS -->
+
+<div class="social">
+    <a href="https://instagram.com" TARGET="_blank"><img src="img/Instagram.png" title="Znajdź nas na Instagram'ie"/></a>
+</div>
+<div class="social1">
+    <a href="https://www.facebook.com/" TARGET="_blank"><img src="img/fb.png" title="Znajdź nas na Facebook'u"/></a>
+</div>
+<div class="social2">
+    <a href="https://www.twitter.com/" TARGET="_blank"><img src="img/Twitter.png" title="Znajdź nas Twitterze"/></a>
+</div>
+
+<!-- SECTION 'MEET THE TEAM' -->
+
+<div class="o_nas">
     <h1>Meet the Team</h1>
-
-    <div class="container">
-        <div class="content">
-
-            <h2 id="Ma">Marek</h2>
-            <div class="zdjecie1"><img src="image/marek.jpg" align="left"/></a></div>
-            <p>Entuzjasta nowych technologii oraz aktywnego spedzania wolnego czasu.</p><br/>
-            <h2 id="Na">Natalia</h2>
-            <div class="zdjecie1"><img src="image/Nat.jpg" align="left"/></a></div>
-            <p>Nie ma rzeczy niemozliwych. Sa tylko te, ktore oczekuja od nas troche wiecej wysilku.</p>
-            <p></p>
-            <h2 id="Pi">Piotr</h2>
-            <div class="zdjecie1"><img src="image/smiley.JPG" align="left"/></a></div>
-            <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim...</p>
-            <h2 id="Go">Grzegorz</h2>
-            <div class="zdjecie1"><img src="image/smiley.JPG" align="left"/></a></div>
-            <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim...</p>
+    <div class="card">
+        <h2>Marek</h2>
+        <div class="image">
+            <img src="img/Marek.jpg" alt="Avatar" style="width:60%">
+        </div>
+        <div class="container">
+            <h4><b>Entuzjasta nowych technologii oraz aktywnego spędzania wolnego czasu.</b></h4>
+            <p>Przygodę z Gdańskiem rozpoczął na studiach, kiedy to "pęd do wiedzy" skierował go do tego pięknego miasta. Uwielbia cofać się w czasie bawiąc się z jego 4-latkiem i przypominać sobie jak to kiedyś bywało... Obecnie szuka nowych wyzwań zawodowych.
+        </div>
+        <div class="soc_med">
+            <a href="https://github.com" TARGET="_blank"><img src="img/github.png" title="Znajdź mnie na GitHub"/></a>
+        </div>
+        <div class="soc_med">
+            <a href="https://gmail.com" TARGET="_blank"><img src="img/envelope.png" title="Kontakt ze mną"/></a>
+        </div>
+    </div>
+    <div class="card">
+        <h2>Natalia</h2>
+        <div class="image">
+            <img src="img/Nat.jpg" alt="Avatar" style="width:60%">
+        </div>
+        <div class="container">
+            <h4><b>Nie ma rzeczy niemożliwych. Są tylko te, które oczekują od nas trochę więcej wysiłku.</b></h4>
+            <p>Dziewczyna z tysiącem pomysłów na minutę, która nie wie co to nuda. Pasjonatka wszelkiego rodzaju spotrów, gier planszowych, fotografii i rysunku. Ostatnio jej serce skradł web design i front-end development.<br/>Jak spadać to z wysoka :)</p>
+        </div>
+        <div class="soc_med">
+            <a href="https://github.com" TARGET="_blank"><img src="img/github.png" title="Znajdź mnie na GitHub"/></a>
+        </div>
+        <div class="soc_med">
+            <a href="https://gmail.com" TARGET="_blank"><img src="img/envelope.png" title="Kontakt ze mną"/></a>
+        </div>
+    </div>
+    <div class="card">
+        <h2>Piotr</h2>
+        <div class="image">
+            <img src="img/error.png" alt="Avatar" style="width:60%">
+        </div>
+        <div class="container">
+            <h4><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut...</b></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="soc_med">
+            <a href="https://github.com" TARGET="_blank"><img src="img/github.png" title="Znajdź mnie na GitHub"/></a>
+        </div>
+        <div class="soc_med">
+            <a href="https://gmail.com" TARGET="_blank"><img src="img/envelope.png" title="Kontakt ze mną"/></a>
+        </div>
+    </div>
+    <div class="card">
+        <h2>Grzegorz</h2>
+        <div class="image">
+            <img src="img/error.png" alt="Avatar" style="width:60%">
+        </div>
+        <div class="container">
+            <h4><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut...</b></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="soc_med">
+            <a href="https://github.com" TARGET="_blank"><img src="img/github.png" title="Znajdź mnie na GitHub"/></a>
+        </div>
+        <div class="soc_med">
+            <a href="https://gmail.com" TARGET="_blank"><img src="img/envelope.png" title="Kontakt ze mną"/></a>
         </div>
     </div>
 </div>
-    <div id="footer">
-        <div class="container1">
-            <section>
 
-                    <h3><img class="logo" src="image/logo.png"/></a></h3>
-                    <span class="byline">
-                        Connect with us
-                    </span>
-                    <a href="https://twitter.com/"><img src="image/twitter.png"/></a><span></span>
-                    <a href="https://www.facebook.com/"><img src="image/fb.png"></a><span></span>
-                    <a href="https://www.instagram.com/"><img src="image/instagram.png"></a><span></span>
-                    <a href="https://plus.google.com/collections/featured"><img src="image/google+.png"></a><span></span>
-                    <a href="https://gmail.com/"><img src="image/gmail.png"></a>
+<!-- FOOTER -->
 
+<div id="footer">
+    <div class="container1">
+        <section>
+            <h3><img class="logo" src="img/logo.png"/></h3>
+                <span class="byline">
+                    Connect with us
+                </span>
+            <a href="https://www.facebook.com/" TARGET="_blank"><img src="img/fb.png" title="Znajdź nas na Facebook'u"/></a><span></span>
+            <a href="https://plus.google.com/collections/featured" TARGET="_blank"><img src="img/google+.png" title="Znajdź nas na Google+"/></a><span></span>
+            <a href="https://instagram.com" TARGET="_blank"><img src="img/Instagram.png" title="Znajdź nas na Instagram'ie"/></a><span></span>
+            <a href="https://gmail.com/" TARGET="_blank"><img src="img/gmail.png" title="Wyślij nam wiadomość na Google Mail"/></a><span></span>
+            <a href="https://www.twitter.com/" TARGET="_blank"><img src="img/Twitter.png" title="Znajdź nas Twitterze"/></a>
 
-            </section>
-        </div>
-        <div class="koniec">
-            &copy; 2016 MaNaPiGo<span>|</span><a href="">Contact</a><span>|</span><a href="">Terms and Conditions</a>
-        </div>
+        </section>
+    </div>
+    <div class="koniec">
+        Copyright &copy; 2016 MaNaPiGo<span>|</span><a href="">Contact</a><span>|</span><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Terms and Conditions</a>
     </div>
 </div>
+
+<!-- SIDE MENU / SCRIPT -->
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "200px";
+        document.getElementById("main").style.marginLeft = "200px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+</script>
+
 </body>
 </html>
+

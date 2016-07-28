@@ -8,7 +8,7 @@ header {
 
 .canvas-viev {
   -webkit-transition: all 0.4s ease;
-  background-color: #ff51e5; }
+  background-color: #fff; }
 
 .canvas-active {
   transform: translate(0, -30px) scale(0.7, 0.7) rotateY(15deg); }
@@ -18,17 +18,17 @@ header {
   width: 100%;
   height: 770px;
   z-index: 0; }
-  .slider .slide-group {
-    position: relative;
-    width: 100%;
-    height: 100%; }
-    .slider .slide-group .slide {
-      position: absolute;
-      width: 100%;
-      height: 100%; }
-      .slider .slide-group .slide img {
-        width: 100%;
-        height: 100%; }
+.slider .slide-group {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+.slider .slide-group .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+.slider .slide-group .slide img {
+  width: 100%;
+  height: 100%; }
 
 .menu-btn {
   width: 60px;
@@ -40,16 +40,16 @@ header {
   border-color: transparent;
   background: none;
   z-index: 1; }
-  .menu-btn span {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 6px;
-    border-radius: 5px 5px;
-    background-color: #8893ff;
-    opacity: 1;
-    transform: rotate(0deg);
-    transition: .30s; }
+.menu-btn span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px 5px;
+  background-color: #8893ff;
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: .30s; }
 
 .menu-btn span:nth-child(1) {
   top: 0; }
@@ -77,30 +77,28 @@ header {
   top: 0;
   right: 0;
   height: 100%;
-  width: 260px;
+  width: 210px;
   background-color: #374c5d;
   -webkit-transform: translate(100%, 0);
   -webkit-transition: all 0.4s ease; }
-  .menu-conteiner ul {
-    width: 100%;
-    height: 100%;
-    margin-top: 90px;
-    padding: 0; }
-    .menu-conteiner ul li {
-      list-style: none;
-      font-family: "brandon-grotesque", sans-serif;
-      font-size: 20px;
-      padding: 16px;
-      border-top: solid 1px black;
-      text-align: center; }
-      .menu-conteiner ul li a {
-        text-decoration: none;
-        color: #ffffff; }
+.menu-conteiner ul {
+  width: 100%;
+  height: 100%;
+  margin-top: 90px;
+  padding: 0; }
+.menu-conteiner ul li {
+  list-style: none;
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 20px;
+  padding: 16px;
+  border-top: solid 1px black;
+  text-align: center; }
+.menu-conteiner ul li a {
+  text-decoration: none;
+  color: #ffffff; }
 
 .menu-conteiner ul li:last-child {
   border-bottom: solid 1px black; }
 
 li:hover {
   background-color: aqua; }
-
-/*# sourceMappingURL=header.css.map */
