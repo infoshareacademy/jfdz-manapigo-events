@@ -16,7 +16,7 @@
 
 .form-group {
     margin-bottom: 15px;
-    width: 95%;
+    width: 97%;
 }
 
 
@@ -24,6 +24,10 @@
 .left {float:left;}
 .clear {clear: both;}
 
+.formularz {
+    padding: 100px;
+    margin: auto;
+}
 
 label {
     display: inline-block;

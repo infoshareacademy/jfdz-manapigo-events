@@ -7,10 +7,12 @@
         <meta name="keywords" content="Manapigo">
         <meta name="description" content="Manapigo">
         <meta name="author" content="Manapigo Team">
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
         <link rel="stylesheet" href="css/fontello.css" type="text/css"/>
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/header.css">
-        <link rel="stylesheet" type="text/css" href="css/o_nas.css">"
+        <link rel="stylesheet" type="text/css" href="css/o_nas.css">
 
         <link rel="Shortcut icon" href="img/favicon64.ico"/>
 
@@ -18,109 +20,75 @@
     </head>
 
     <body>
+    <div class="menu-conteiner">
+        <ul class="menu-list">
+            <li><a href="#"> Strona Głowna</a></li>
+            <li><a href="#">Napisz do Nas</a></li>
+            <li><a href="#">Kalendarz</a></li>
+            <li><a href="#">Strona o nas</a></li>
 
-    <header>
+        </ul>
 
-        <div class="slade-container">
-            <ul class="slides">
-                <input type="radio" name="radio-btn" id="img-1" checked />
-                <li class="container">
-                    <div class="slide">
-                        <img src="img/image-03.jpg" />
-                        <figcaption>
-                            Chcesz podzielic sie opinia na temat miejsca?
+    </div>
+    <button class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div class="canvas-viev">
+        <header>
+            <div class="slider">
+                <div class="slide-group">
+                        <div class="slide slide-1"><img src="img/image-01.jpg"></div>
+                        <div class="slide slide-2"><img src="img/image-02.jpg"></div>
+                        <div class="slide slide-3"><img src="img/image-03.jpg"></div>
+                        <div class="slide slide-4"><img src="img/image-02.jpg"></div>
 
-                        </figcaption>
-                    </div>
-                    <div class="nav">
-                        <label for="img-4" class="prev">&#x2039;</label>
-                        <label for="img-2" class="next">&#x203a;</label>
-                    </div>
-                </li>
+                </div>
+                <div class="slide-buttons"></div>
 
-                <input type="radio" name="radio-btn" id="img-2" />
-                <li class="container">
-                    <div class="slide">
-                        <img src="img/image-01.jpg" />
-                        <figcaption>
-                            Masz fajne zdjecia z koncertu?
-                        </figcaption>
-                    </div>
-                    <div class="nav">
-                        <label for="img-1" class="prev">&#x2039;</label>
-                        <label for="img-3" class="next">&#x203a;</label>
-                    </div>
-                </li>
-
-                <input type="radio" name="radio-btn" id="img-3" />
-                <li class="container">
-                    <div class="slide">
-                        <img src="img/image-02.jpg" />
-                        <figcaption>
-                            Szukasz pomyslu na weekend?<br/>
-                        </figcaption>
-                    </div>
-                    <div class="nav">
-                        <label for="img-2" class="prev">&#x2039;</label>
-                        <label for="img-4" class="next">&#x203a;</label>
-                    </div>
-                </li>
-
-                <input type="radio" name="radio-btn" id="img-4" />
-                <li class="container">
-                    <div class="slide">
-                        <img src="img/dzwigi.jpg" />
-                        <figcaption>
-                            Jestes w dobrym miejscu!
-                        </figcaption>
-                    </div>
-                    <div class="nav">
-                        <label for="img-3" class="prev">&#x2039;</label>
-                        <label for="img-1" class="next">&#x203a;</label>
-                    </div>
-                </li>
-
-                <li class="nav-dots">
-                    <label for="img-1" class="nav-dot" id="img-dot-1"></label>
-                    <label for="img-2" class="nav-dot" id="img-dot-2"></label>
-                    <label for="img-3" class="nav-dot" id="img-dot-3"></label>
-                    <label for="img-4" class="nav-dot" id="img-dot-4"></label>
-                </li>
-            </ul>
-        </div>
-
-        <div class="menu">
-            <div class="icon">
-                <input type="checkbox" title="menu">
-                <div class="line"></div>
             </div>
 
-            <div class="center">
-                <h3>Gdańsk</h3>
-                <p>Kalendarz z najważniejszymi wydarzeniami w Trójmieście</p>
-                    <div class="btnp"> strona o nas </div>
-                <i class="icon-star" id="star1"></i>
-                <i class="icon-star" id="star2"></i>
+
+
+
+
+        </header>
+
+
+    <div class="clear"></div>
+
+
+
+    <section class="team">
+        <div class="content">
+            <h1>Meet the Team</h1>
+            <h4>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</h4>
+
+            <div class="team-member">
+                <div class="zdjecie zdjecie-marek"></div>
+                <h2>Marek</h2>
+                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim...</p>
             </div>
-
-           <!-- <nav class="Nav">
-                <ul>
-                    <p>Menu</p><li class="homix">
-                    <i class="icon-home"></i>
-                    <ul>
-                        <li><a href="#">Strona głowna</a></li>
-                        <li><a href="#">Kalendarz</a></li>
-                        <li><a href="#">Napisz do nas</a></li>
-                        <li><a href="#">Strona o nas</a></li>
-                    </ul>
-                </li>
-
-                </ul>
-            </nav>-->
+            <div class="team-member">
+                <div class="zdjecie zdjecie-natalia"></div>
+                <h2>Natalia</h2>
+                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim...</p>
+            </div>
+            <div class="team-member">
+                <div class="zdjecie zdjecie-piotr"></div>
+                <h2>Piotrek</h2>
+                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim...</p>
+            </div>
+            <div class="team-member">
+                <div class="zdjecie zdjecie-grzegorz"></div>
+                <h2>Grzegorz</h2>
+                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim...</p>
+            </div>
         </div>
-    </header>
+    </section>
 
-    <form action="" method="post">
+    <form action="" method="post" class="formularz">
         <div class="content">
             <div class="form-group">
                 <label for="name">Imię i Nazwisko:</label>
@@ -145,33 +113,6 @@
             </div>
         </div>
     </form>
-
-    <section class="team">
-        <div class="content">
-            <h1>Meet the Team</h1>
-
-            <div class="team-member">
-                <h2>Marek</h2>
-                <div class="zdjecie zdjecie-marek"></div>
-                Entuzjasta nowych technologii oraz aktywnego spedzania wolnego czasu.
-            </div>
-            <div class="team-member">
-                <h2>Natalia</h2>
-                <div class="zdjecie zdjecie-natalia"></div>
-                Nie ma rzeczy niemozliwych. Sa tylko te, ktore oczekuja od nas troche wiecej wysilku.
-            </div>
-            <div class="team-member">
-                <h2>Piotr</h2>
-                <div class="zdjecie zdjecie-piotr"></div>
-                Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim...
-            </div>
-            <div class="team-member">
-                <h2>Grzegorz</h2>
-                <div class="zdjecie zdjecie-grzegorz"></div>
-                Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim...
-            </div>
-        </div>
-    </section>
 
     <div id="footer">
             <div class="container1">
@@ -202,7 +143,7 @@
     <div class="social2">
         <a href="https://www.twitter.com/" TARGET="_blank"><img src="img/Twitter.png" title="Znajdź nas Twitterze"/></a>
     </div>
-        </div>
+    </div>
 
     </body>
 </html>

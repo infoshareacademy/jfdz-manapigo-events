@@ -1,7 +1,15 @@
 .content {
-    width: 1200px;
     margin: 0 auto;
     /*background-color: #00d500;*/
+}
+
+h4 {
+    text-align: center;
+    font-size: 20px;
+    font-family: Raleway;
+    padding-bottom: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .team a {
@@ -22,44 +30,56 @@
 
 .team-member {
     height: 200px;
-    padding-left: 170px;
+    padding: 0 100px;
     font-family: Raleway, Arial, sans-serif;
     position: relative;
     color: #23262B;
-    text-align: center;
     /*text-shadow: 1px 1px 1px #7E827A;*/
 }
 
 .team .team-member h2 {
+    display: inline-block;
     color: #0F0912;
     text-align: center;
     font-family: Pacifico, serif;
     font-size: 30px;
     text-shadow: 2px 2px 5px #D8D0DB;
+    vertical-align: 121px;
 }
 
 .team .team-member .zdjecie {
+    text-align: left;
+    margin-right: 420px;
+    display: inline-block;
     width: 150px;
     height: 150px;
     opacity: 0.3;
     transition: 0.5s;
-    position: absolute;
-    top:10px;
-    left: 0;
     border-radius: 50%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
 }
+.team .team-member p {
+    text-align: center;
+    vertical-align: 200px;
+    margin-top: -80px;
+    margin-left: 200px;
+}
+
+
+
 
 .team .team-member .zdjecie:hover {
     opacity: 1.0;
-    margin: 5px;
+    margin-right: 200px;
+    transform: scale(1.2);
 }
 
 .team .team-member .zdjecie-marek {
     background-image: url(../img/marek.jpg);
+
 }
 
 .team .team-member .zdjecie-natalia {
