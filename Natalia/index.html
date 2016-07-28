@@ -8,6 +8,8 @@
 <link rel="stylesheet" type="text/css" href="css/meet_the_team.css">
 <link rel="stylesheet" type="text/css" href="css/footer.css">
 <link rel="stylesheet" type="text/css" href="css/side_soc_media_icons.css">
+<link rel="stylesheet" type="text/css" href="css/form.css">
+<link rel="stylesheet" type="text/css" href="css/header.css">
 
 <link href='https://fonts.googleapis.com/css?family=Raleway|Indie+Flower|Lobster|Josefin+Sans|Pacifico|Gloria+Hallelujah&subset=latin-ext' rel='stylesheet' type='text/css'>
 <body>
@@ -24,7 +26,7 @@
 
 <div id="main">
 
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ MENU</span>
+    <span style="font-size:30px; cursor:pointer; text-shadow: 2px 2px 5px rgba(120, 125, 189, 0.47)" onclick="openNav()">☰ MENU</span>
 </div>
 
 <!-- SIDE SOCIAL MEDIA ICONS -->
@@ -37,6 +39,12 @@
 </div>
 <div class="social2">
     <a href="https://www.twitter.com/" TARGET="_blank"><img src="img/Twitter.png" title="Znajdź nas Twitterze"/></a>
+</div>
+
+<!-- header -->
+
+<div class="my_header">
+    <h1>A Ty jakie masz plany?</h1>
 </div>
 
 <!-- SECTION 'MEET THE TEAM' -->
@@ -108,6 +116,30 @@
         </div>
     </div>
 </div>
+
+<!-- contact form -->
+
+<form action="" method="post" class="formularz">
+    <div class="content">
+        <div class="form-group">
+            <label for="name">Imię</label>
+            <input type="text" class="form-control" id="name" pattern="[A-Za-z ]{1,40}$" required/>
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" id="email" required/>
+        </div>
+        <div class="form-group">
+            <label for="message">Wiadomość</label>
+            <textarea class="form-control" id="message" placeholder="Treść wiadomości" required></textarea>
+        </div>
+        <div class="button-form">
+            <input class="right" type="submit" name="submit" id="submit" value="Wyślij wiadomość"/>
+            <input class="right" type="reset" name="reset" id="reset" value="Wyczyść pola"/>
+            <div class="clear"></div>
+        </div>
+    </div>
+</form>
 
 <!-- FOOTER -->
 

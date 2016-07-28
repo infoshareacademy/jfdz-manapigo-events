@@ -19,6 +19,7 @@
     font-family: Raleway;
     font-size: 60px;
     text-align: center;
+    text-shadow: 2px 2px 5px rgba(120, 125, 189, 0.47)
 }
 .card {
     /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/

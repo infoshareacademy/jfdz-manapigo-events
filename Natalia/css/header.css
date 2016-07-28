@@ -1,0 +1,16 @@
+.my_header {
+    height: 360px;
+    line-height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-attachment: fixed;
+    background-image:url('../img/herb.png');
+}
+
+.my_header h1 {
+    text-align: center;
+    color: #000;
+    margin: 0;
+    font-size: 40px;
+}
