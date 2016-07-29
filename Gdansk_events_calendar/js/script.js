@@ -34,7 +34,7 @@ $(document).ready(function(){
 
             $slides.eq(currentIndex).fadeOut(4000).removeClass('active-slide');
 
-            $group.animate(1000,function () {
+            $group.animate(2000,function () {
 
                 $slides.eq(newIndex).fadeIn(4000).addClass('active-slide');
                 currentIndex = newIndex;
@@ -54,7 +54,7 @@ $(document).ready(function(){
                     move(0);
                 }
 
-            },7000);
+            },8000);
         }
 
         timing();

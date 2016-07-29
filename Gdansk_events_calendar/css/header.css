@@ -10,7 +10,7 @@ header {
   -webkit-transition: all 0.4s ease; }
 
 .canvas-active {
-  transform: translate(0, -300px) scale(0.7, 0.7); }
+  transform: translate(-100px, -300px) scale(0.7, 0.7); }
 
 header .slider {
   width: 100%;
@@ -18,7 +18,8 @@ header .slider {
 
 .slide-viewer {
   position: relative;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
 
 .slide-group {
   width: 100%;
@@ -30,9 +31,10 @@ header .slider {
   height: 100%;
   display: none;
   position: absolute; }
-  .slide img {
-    width: 100%;
-    height: 100%; }
+
+.slide img {
+  width: 100%;
+  height: 100%; }
 
 .active-slide {
   display: block; }
