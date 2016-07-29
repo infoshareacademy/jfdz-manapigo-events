@@ -32,11 +32,6 @@ $(document).ready(function(){
 
             timing();
 
-            if($group.is(':animated') || currentIndex === newIndex){
-                return;
-            }
-
-
             $slides.eq(currentIndex).fadeOut(4000).removeClass('active-slide');
 
             $group.animate(1000,function () {
@@ -59,7 +54,7 @@ $(document).ready(function(){
                     move(0);
                 }
 
-            },8000);
+            },7000);
         }
 
         timing();

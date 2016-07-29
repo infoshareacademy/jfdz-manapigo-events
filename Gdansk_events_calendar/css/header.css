@@ -4,13 +4,13 @@ body {
 
 header {
   width: 100%;
-  height: 800px; }
+  height: 750px; }
 
 .canvas-viev {
   -webkit-transition: all 0.4s ease; }
 
 .canvas-active {
-  transform: translate(0, -30px) scale(0.7, 0.7) rotateY(15deg); }
+  transform: translate(0, -300px) scale(0.7, 0.7); }
 
 header .slider {
   width: 100%;
@@ -18,7 +18,6 @@ header .slider {
 
 .slide-viewer {
   position: relative;
-  overflow: hidden;
   height: 100%; }
 
 .slide-group {
