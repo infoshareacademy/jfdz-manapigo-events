@@ -23,7 +23,7 @@ $(document).ready(function(){
         var $this = $(this);
         var $slides = $this.find('.slide');
         var $group =  $this.find('.slide-group');
-        var currentIndex = 0;
+        var currentIndex = 1;
         var timeout;
 
 
@@ -48,7 +48,7 @@ $(document).ready(function(){
 
             timeout=setTimeout(function(){
                 if(currentIndex < ($slides.length - 1)){
-                    move(currentIndex + 1);
+                    move(currentIndex++);
                 }
                 else{
                     move(0);
