@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway|Indie+Flower|Lobster|Josefin+Sans|Pacifico|Gloria+Hallelujah&subset=latin-ext);
+
+.col-md-3 {
+    text-align: center;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+/*.container {
+    background-color: black;
+    color: #d6d6d6;
+}*/
+
+.container p {
+    text-align: center;
+}
+.navbar-default {
+    background-color: white;
+}
+
+.col-md-3 h3 {
+    font-family: Pacifico;
+}
