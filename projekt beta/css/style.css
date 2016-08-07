@@ -1,11 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway|Indie+Flower|Lobster|Josefin+Sans|Pacifico|Gloria+Hallelujah&subset=latin-ext);
 
+
+
 .col-md-3 {
     text-align: center;
 }
 
-.col-md-3 h3 {
+.col-md-3 h4 {
     margin: 60px 0 50px 0;
+    font-family: Pacifico;
+    font-size: 30px;
 }
 
 h2 {
@@ -17,16 +21,19 @@ h2 {
     background-color: black;
     color: #d6d6d6;
 }*/
-
-.container p {
+.container1 {
+    color: #c6c6c6;
+    font-family: Raleway;
+}
+.container1 p {
     text-align: center;
 }
 .navbar-default {
     background-color: white;
 }
 
-.col-md-3 h3 {
-    font-family: Pacifico;
+.col-md-3 {
+    padding-bottom: 30px;
 }
 
 .soc_med {
@@ -38,7 +45,17 @@ h2 {
     margin: 50px 10px 0 10px;
 }
 
-.container h1 {
+.container1 h1 {
     text-align: center;
     margin: 40px;
+    padding: 30px;
+    color: #5d04ae;
+}
+
+.container1 {
+    background-color: #2B2927;
+}
+
+.container1 h3 {
+    color: #ae0047
 }

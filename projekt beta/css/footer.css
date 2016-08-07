@@ -2,9 +2,10 @@
 
 #footer {
     padding: 1.5em 0em;
-
+    background-color: #2B2927;
     text-align: center;
     font-family: Raleway;
+    color: #c6c6c6;
 }
 
 
@@ -39,8 +40,9 @@ header {
 
 .koniec {
     font-size: 0.8em;
-    color: #23262B;
-    text-shadow: 1px 1px 1px #7E827A;
+    color: #c6c6c6;
+    /*text-shadow: 1px 1px 1px #7E827A;*/
+    text-decoration: none;
 }
 
 .logo {
@@ -50,5 +52,5 @@ header {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: #c6c6c6;
 }
