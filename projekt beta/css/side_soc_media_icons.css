@@ -6,7 +6,8 @@
     height: 100px;
     position: fixed;
     top: 30px;
-    right: 5px
+    right: 5px;
+    z-index: 1;
 }
 
 .social1{
@@ -15,7 +16,8 @@
     height: 100px;
     position: fixed;
     top: 90px;
-    right: 5px
+    right: 5px;
+    z-index: 1;
 }
 
 .social2 {
@@ -25,4 +27,5 @@
     position: fixed;
     top: 150px;
     right: 5px;
+    z-index: 1;
 }
