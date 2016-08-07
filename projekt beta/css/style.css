@@ -4,6 +4,10 @@
     text-align: center;
 }
 
+.col-md-3 h3 {
+    margin: 60px 0 50px 0;
+}
+
 .container h2 {
     text-align: center;
 }
@@ -22,4 +26,18 @@
 
 .col-md-3 h3 {
     font-family: Pacifico;
+}
+
+.soc_med {
+    display: inline-block;
+    margin: 20px 10px 0 10px;
+}
+
+.about_me {
+    margin: 50px 10px 0 10px;
+}
+
+.container h1 {
+    text-align: center;
+    margin: 40px;
 }

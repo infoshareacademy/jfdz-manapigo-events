@@ -12,6 +12,10 @@
 
 }
 
+.soc_med_person {
+    text-align: center;
+}
+
 .o_nas:after {
     content: '';
     display: block;
