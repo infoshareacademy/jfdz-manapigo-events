@@ -7,7 +7,7 @@
 }
 
 .col-md-3 h4 {
-    margin: 60px 0 50px 0;
+    margin: 60px 10px 50px 10px;
     font-family: Pacifico;
     font-size: 30px;
 }
@@ -47,9 +47,9 @@ h2 {
 
 .container1 h1 {
     text-align: center;
-    margin: 40px;
+    margin: 40px 10px 10px 10px;
     padding: 30px;
-    color: #5d04ae;
+    color: #ae0047;
 }
 
 .container1 {
@@ -57,5 +57,6 @@ h2 {
 }
 
 .container1 h3 {
-    color: #ae0047
+    color: #4e0497
 }
+

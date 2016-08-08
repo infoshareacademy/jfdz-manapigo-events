@@ -8,15 +8,18 @@
     font-family: Raleway;
     font-size: 100px;
     text-shadow: 2px 2px 5px #000
+
 }
 
 .carousel-caption p {
     font-family: Raleway;
     font-size: 60px;
     text-shadow: 2px 2px 5px #db2549
+
 }
 
 .carousel-inner img {
     opacity: 0.8;
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
 }
-

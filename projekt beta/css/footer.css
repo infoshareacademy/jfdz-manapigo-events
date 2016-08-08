@@ -54,3 +54,18 @@ a {
     text-decoration: none;
     color: #c6c6c6;
 }
+
+.bye_game {
+    margin-top: 15px;
+    padding-bottom: 10px;
+}
+
+.backtotop {
+    background: none;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 30px;
+    right: 5px;
+    z-index: 1;
+}
