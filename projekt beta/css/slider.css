@@ -23,3 +23,7 @@
     -webkit-filter: blur(1px);
     filter: blur(1px);
 }
+
+#carousel-example-generic2 {
+    padding-bottom: 20px;
+}
