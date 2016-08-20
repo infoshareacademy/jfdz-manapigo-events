@@ -63,3 +63,14 @@ h2 {
 .info {
     padding: 13px;
 }
+
+.first {
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+}
+.first p {
+    font-family: Raleway;
+    font-size: 20px;
+    padding: 15px;
+}
