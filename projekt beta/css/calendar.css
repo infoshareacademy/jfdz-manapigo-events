@@ -35,6 +35,8 @@
 
 #calendar-dates>table>tr>td:hover {
     color: #cc42a0;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .offers {
