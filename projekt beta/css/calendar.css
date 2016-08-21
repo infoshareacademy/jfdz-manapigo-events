@@ -25,13 +25,16 @@
     margin: 0 auto;
 }
 
-
 #calendar-month-year{
     margin: 5px;
 }
 
 #calendar-dates>table>tr>td {
     padding: 5px;
+}
+
+#calendar-dates>table>tr>td:hover {
+    color: #cc42a0;
 }
 
 .offers {

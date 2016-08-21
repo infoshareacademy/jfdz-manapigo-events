@@ -43,8 +43,23 @@ function get_calendar(day_no, days){
 
     var count = 1;
     for(; c<=6; c++){
+
         var td = document.createElement('td');
+
+        // http://rozrywka.trojmiasto.pl/imprezy/?data_od=2016-08-25&data_do=2016-08-25
+
+        //var data = year + '-' + month + '-' + count;
+
+        td.addEventListener('click', function() {
+            window.open('http://goingapp.pl/calendar/13/trojmiasto');
+        });
+
+        // var a = document.createElement('a');
+        // a.setAttribute('href', 'http://wp.pl');
+        // a.innerHTML = count;
+
         td.innerHTML = count;
+        // td.appendChild(a);
         count++;
         tr.appendChild(td);
     }
@@ -54,6 +69,9 @@ function get_calendar(day_no, days){
     for(var r=3; r<=7; r++){
         tr = document.createElement('tr');
         for(var c=0; c<=6; c++){
+            td.addEventListener('click', function() {
+                window.open('http://goingapp.pl/calendar/13/trojmiasto');
+            });
             if(count > days){
                 table.appendChild(tr);
                 return table;
