@@ -16,6 +16,8 @@
     <link type="text/css" rel="stylesheet" href="css/calendar.css">
 
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+    <script type="text/javascript" src="js/scrollup.js"></script>
 
     <link rel="Shortcut icon" href="img/favicon64.ico"/>
 
@@ -25,20 +27,30 @@
 <body>
 
 <!-- =============== NAV BAR MENU =============== -->
+<div id="home"></div>
+
 <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header"><img class="logo" src="img/logo.png"/>
-            <a class="navbar-brand" href="#"></a>
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
         </div>
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Meet the Team</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#calendar">Calendar</a></li>
+                <li><a href="#meet-the-team">Meet the Team</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#contact"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+            </ul>
+        </div>
     </div>
 </nav>
-
 
 
 <!-- =============== SOCIAL MEDIA ICONS =============== -->
@@ -56,6 +68,7 @@
 <!-- =============== SLIDER =============== -->
 
 <div id="carousel-example-generic2" class="carousel slide">
+
 
     <!-- Wskaźniki w postaci kropek - ma byc?
 
@@ -124,6 +137,8 @@
 <!-- =============== CALENDAR =============== -->
 
 <div class="container-fluid" style="background-color: #fff;">
+    <div id="calendar"></div>
+
     <h1 style="padding: 20px; text-align: center; font-family: Raleway;">Hi there! </br> What are you up to?</h1>
 
     <div class="container">
@@ -163,10 +178,10 @@
 </div>
 
 <!-- =============== ABOUT US =============== -->
-
 <div class="container1">
-    <h1><b>Meet the Team</b></h1>
+    <div id="meet-the-team"></div>
 
+    <h1><b>Meet the Team</b></h1>
     <p>What do The Beatles, the Four Horsemen, the cardinal directions and The Ghostbusters have in common?</p>
     <p>All of these consist of 4s! And so does MaNaPiGo - a group of 4 young people put together by a desire of changing their life!</p>
     <h3><b>Catch them all</b></h3>
@@ -230,6 +245,8 @@
 </div>
 
 <!-- =============== FORM =============== -->
+<div id="contact"></div>
+
 <div class="form">
 <h2>Don't like the spam? Neither do we!</br> Email us only if you want to hear back from us:</h2>
 
