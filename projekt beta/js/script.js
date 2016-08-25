@@ -15,7 +15,7 @@ window.onload = function(){
     var calendar = get_calendar(day_no, days);
     document.getElementById("calendar-month-year").innerHTML = month_name[month]+" "+year;
     document.getElementById("calendar-dates").appendChild(calendar);
-}
+};
 
 function get_calendar(day_no, days){
     var table = document.createElement('table');
@@ -85,3 +85,19 @@ function get_calendar(day_no, days){
     }
     return table;
 }
+ function check_button(){
+
+     var btn_antyrobot = document.getElementById('robots').checked;
+     var btn_send = document.getElementById('btn-send');
+
+     switch (btn_antyrobot) {
+         case true:
+             btn_send.disabled = false;
+
+             break;
+         default:
+             btn_send.disabled = true;
+
+             break;
+     }
+ }
