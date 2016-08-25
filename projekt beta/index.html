@@ -15,9 +15,6 @@
     <link rel="stylesheet" type="text/css" href="css/side_soc_media_icons.css">
     <link type="text/css" rel="stylesheet" href="css/calendar.css">
 
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/scroll.js"></script>
-    <script type="text/javascript" src="js/scrollup.js"></script>
 
     <link rel="Shortcut icon" href="img/favicon64.ico"/>
 
@@ -269,7 +266,7 @@
         <div class="col-sm-offset-2 col-sm-10">
             <div class="checkbox">
                 <label>
-                    <<input type="checkbox" id="robots"> Tick if you are not a robot :)>
+                    <input type="checkbox" id="robots" onclick="check_button()"> Tick if you are not a robot :)
                     <!--input type="text" name="foo" style="display: none;"-->
                 </label>
             </div>
@@ -277,7 +274,7 @@
     </div>
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default" id="btn-send">Send</button>
+            <button type="submit" class="btn btn-default" id="btn-send" disabled>Send</button>
         </div>
     </div>
 </form>
@@ -321,5 +318,8 @@
 </script>
 
 </body>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript" src="js/scrollup.js"></script>
 </html>
 
