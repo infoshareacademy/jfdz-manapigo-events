@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway|Indie+Flower|Lobster|Josefin+Sans|Pacifico|Gloria+Hallelujah&subset=latin-ext);
 
-.item {
-  height: 100vh;
-}
+/*.item {*/
+  /*height: 100vh;*/
+/*}*/
 
 .carousel-caption h3 {
     font-family: Raleway;
