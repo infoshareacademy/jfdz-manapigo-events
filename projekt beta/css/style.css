@@ -21,11 +21,12 @@ h2 {
     background-color: black;
     color: #d6d6d6;
 }*/
-.container1 {
+#meet-the-team {
     color: #c6c6c6;
     font-family: Raleway;
+    background-color: #2B2927;
 }
-.container1 p {
+#meet-the-team p {
     text-align: center;
 }
 .navbar-default {
@@ -45,18 +46,14 @@ h2 {
     margin: 50px 10px 0 10px;
 }
 
-.container1 h1 {
+#meet-the-team h1 {
     text-align: center;
     margin: 40px 10px 10px 10px;
     padding: 30px;
     color: #ae0047;
 }
 
-.container1 {
-    background-color: #2B2927;
-}
-
-.container1 h3 {
+#meet-the-team h3 {
     color: #4e0497
 }
 
