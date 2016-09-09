@@ -48,7 +48,7 @@ var isSunk = false; //zmienna do przechowywania informacji czy zatopilam okret
 var chances = 0;
 
 while (isSunk == false) {   //petla, ktora pobiera pole do sprawdzenia
-    if( guesses > 20 || guess == 'stop' ){ alert('Abandon the ship! We are out of torpedoes! The enemy won...'); break; }
+    if( guesses > 10 || guess == 'stop' ){ alert('Abandon the ship! We are out of torpedoes! The enemy won...'); break; }   // 10 to liczba prob, moze byc modyfikowana
 
     guess = prompt("Fire! (choose a number between 0 and 6");   //przy zamknieciu kna lub gdy nic nie zostanie wpisane petla zwraca NULL
     if (guess < 0 || guess > 6) {   // sprawdzenie czy uzytkownik podal liczbe z zakresu 0-6
