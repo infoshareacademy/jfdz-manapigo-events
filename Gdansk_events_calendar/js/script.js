@@ -32,11 +32,11 @@ $(document).ready(function(){
 
             timing();
 
-            $slides.eq(currentIndex).fadeOut(3000).removeClass('active-slide');
+            $slides.eq(currentIndex).fadeOut(500).removeClass('active-slide');
 
             $group.animate(5000,function () {
 
-                $slides.eq(newIndex).fadeIn(3000).addClass('active-slide');
+                $slides.eq(newIndex).fadeIn(500).addClass('active-slide');
                 currentIndex = newIndex;
 
             });
