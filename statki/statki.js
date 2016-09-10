@@ -35,7 +35,7 @@ var stats = "It took you" + guesses + "goes to sunk the ship" + "the score is: "
 
 alert (stats);*/
 
-var randomLoc = Math.floor(Math.random() * 5);  //math.random to losowo generowana liczba z zakresu 0 - 1. Przy przemnozeniu jej przez 5 zakres zwieksza sie do 4.999... . Math.floor to liczba w postaci calkowitej a nie w ulamku
+var randomLoc = Math.round(Math.random() * 4);  //math.random to losowo generowana liczba z zakresu 0 - 1. Przy przemnozeniu jej przez 5 zakres zwieksza sie do 4.999... . Math.floor to liczba w postaci calkowitej a nie w ulamku
 var location1 = randomLoc; //zmienne do przechowywania pozycji okretu - losowo wybrane polozenie i 2 pola obok
 var location2 = location1+1;
 var location3 = location2+1;
