@@ -96,4 +96,14 @@ function get_calendar(day_no, days) {
      btn_send.disabled = !(checkedCheckboxes.length === 1 && checkedCheckboxes.attr('id') === 'robots');
 
 
+
  }
+
+  $('form').on('submit', function (event) {
+     event.preventDefault();
+      alert("Thank you for your message, we will be in touch shortly!");
+      $(':input').not(':button, :submit, :reset, :hidden')
+          .val('')
+          .removeAttr('checked')
+          .removeAttr('selected');
+  })
