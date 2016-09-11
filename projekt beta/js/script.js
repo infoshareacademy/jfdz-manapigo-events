@@ -84,17 +84,16 @@ function get_calendar(day_no, days) {
 
     return table;
 }
+
  function check_button() {
 
      var btn_antyrobot = document.getElementById('robots').checked;
      var btn_send = document.getElementById('btn-send');
+     var btn_leftbot = document.getElementById('robot').checked;
+     var btn_rightbot = document.getElementById('rob').checked;
 
-     switch (btn_antyrobot) {
-         case true:
-             btn_send.disabled = false;
-             break;
-         default:
-             btn_send.disabled = true;
-             break;
-     }
+     var checkedCheckboxes = $('input[type=checkbox]:checked');
+     btn_send.disabled = !(checkedCheckboxes.length === 1 && checkedCheckboxes.attr('id') === 'robots');
+
+
  }
