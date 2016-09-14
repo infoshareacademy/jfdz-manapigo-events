@@ -17,7 +17,7 @@
 
     container.setAttribute('id', 'cookieinfo');
     container.setAttribute('class', 'cookie-alert');
-    container.innerHTML = '<h6>KNOCK, KNOCK! We use Cookies in here...</h6><p>To make this site work properly, we sometimes place small data files called cookies on your device. Most big websites do this too<p>If you are OK with that, you can close this box by clisking on &bdquo;x&rdquo; <p>If you do not approve, you can change the settings in your browser.</p>';
+    container.innerHTML = '<h6>KNOCK, KNOCK! We use Cookies in here...</h6><p>To make this site work properly, we sometimes place small data files called cookies on your device. Most big websites do this too.<p>If you are OK with that, you can close this box by clicking on &bdquo;x&rdquo; <p>If you do not approve, you can change the settings in your browser.</p>';
     
     link.setAttribute('href', '#');
     link.setAttribute('title', 'Zamknij');
