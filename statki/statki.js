@@ -67,3 +67,239 @@ while (isSunk == false) {   //petla, ktora pobiera pole do sprawdzenia
     console.warn('Game state:');
     console.log( 'Guesses: ', guesses++, 'Guess: ', guess, 'isSunk: ', isSunk, 'Chances: ', chances, 'L1: ', location1, 'L2: ', location2, 'L3: ', location3, 'Hits: ', hits );
 }
+
+/*=========================================================================================================*/
+/**
+ * Created by Marek on 2016-09-16 */
+
+/*
+
+
+function losowanie_pion_poziom()      // losowanie położenia statku: pion lub poziom
+{
+    var pp = Math.floor((Math.random() * 2));
+    return pp;
+}
+
+function czworka()          //4-ro masztowiec
+{
+    var kolumny,wiersze,pp;
+    pp=losowanie_pion_poziom();
+                            //ustalanie współrzędnych statku
+    if(pp == 1)             // umiejscowienie W PIONIE
+    {
+        kolumny=Math.floor((Math.random() * 10) + 1);//((rand()%10)+1) - losowanie położenia pierwszego masztu na osi X
+        wiersze=Math.floor((Math.random() * 7) + 4);//((rand()%7)+4) - losowanie położenia pierwszego masztu na osi Y
+        for(var i=0;i<4;i++)
+        {
+            statki[wiersze][kolumny]=1;         //TWORZENIE STATKU: każda "1-ka" to osobny maszt; statek jest otoczony
+            statki[wiersze][kolumny-1]=2;       //"2-kami" (naokoło)
+            statki[wiersze][kolumny+1]=2;
+            if(i == 0)
+            {
+                statki[wiersze+1][kolumny]=2;
+                statki[wiersze+1][kolumny+1]=2;
+                statki[wiersze+1][kolumny-1]=2;
+            }
+            else if(i == 3)
+            {
+                statki[wiersze-1][kolumny]=2;
+                statki[wiersze-1][kolumny+1]=2;
+                statki[wiersze-1][kolumny-1]=2;
+            }
+            wiersze=wiersze-1;
+        }
+    }
+    else if(pp == 0)        // umiejscowienie w POZIOMIE
+    {
+        kolumny=Math.floor((Math.random() * 7) + 4);//((rand()%7)+4);
+        wiersze=Math.floor((Math.random() * 10) + 1);//((rand()%10)+1);
+        for(var i=0;i<4;i++)
+        {
+            statki[wiersze][kolumny]=1;             //TWORZENIE STATKU
+            statki[wiersze-1][kolumny]=2;
+            statki[wiersze+1][kolumny]=2;
+            if(i == 0)
+            {
+                statki[wiersze][kolumny+1]=2;
+                statki[wiersze-1][kolumny+1]=2;
+                statki[wiersze+1][kolumny+1]=2;
+            }
+            else if(i == 3)
+            {
+                statki[wiersze][kolumny-1]=2;
+                statki[wiersze-1][kolumny-1]=2;
+                statki[wiersze+1][kolumny-1]=2;
+            }
+            kolumny=kolumny-1;
+        }
+    }
+}
+
+function trojka()    //3-masztowiec
+{
+    var kolumny,wiersze,pp;
+    pp=losowanie_pion_poziom();
+                        //ustalanie współrzędnych statku
+    if(pp == 1)         // umiejscowienie W PIONIE
+    {
+        do
+        {
+            kolumny=Math.floor((Math.random() * 10) + 1);//((rand()%10)+1);
+            wiersze=Math.floor((Math.random() * 8) + 3);//((rand()%8)+3);
+        }                                               //pętla sprawdza czy wylosowane położenie masztów nie wypada w miejscu
+                                                        //już istniejących masztów innych statków("1") lub bedzpośrednio w ich sąsiedztwie ("2")
+        while(statki[wiersze][kolumny] == 1 || statki[wiersze][kolumny] == 2 || statki[wiersze-1][kolumny] == 1 || statki[wiersze-1][kolumny] == 2 || statki[wiersze-2][kolumny] == 1 || statki[wiersze-2][kolumny] == 2);
+        for(var i=0;i<3;i++)
+        {
+            statki[wiersze][kolumny]=1;//TWORZENIE STATKU
+            statki[wiersze][kolumny-1]=2;
+            statki[wiersze][kolumny+1]=2;
+            if(i == 0)
+            {
+                statki[wiersze+1][kolumny]=2;
+                statki[wiersze+1][kolumny+1]=2;
+                statki[wiersze+1][kolumny-1]=2;
+            }
+            else if(i == 2)
+            {
+                statki[wiersze-1][kolumny]=2;
+                statki[wiersze-1][kolumny+1]=2;
+                statki[wiersze-1][kolumny-1]=2;
+            }
+            wiersze=wiersze-1;
+        }
+    }
+    else if(pp == 0)                 // umiejscowienie w POZIOMIE
+    {
+        do
+        {
+            kolumny=Math.floor((Math.random() * 8) + 3);//((rand()%8)+3);
+            wiersze=Math.floor((Math.random() * 10) + 1);//((rand()%10)+1);
+        }
+        while(statki[wiersze][kolumny] == 1 || statki[wiersze][kolumny] == 2 || statki[wiersze][kolumny-1] == 1 || statki[wiersze][kolumny-1] == 2 || statki[wiersze][kolumny-2] == 1 || statki[wiersze][kolumny-2] == 2);
+
+        for(var i=0;i<3;i++)
+        {
+            statki[wiersze][kolumny]=1;//TWORZENIE STATKU
+            statki[wiersze-1][kolumny]=2;
+            statki[wiersze+1][kolumny]=2;
+            if(i == 0)
+            {
+                statki[wiersze][kolumny+1]=2;
+                statki[wiersze-1][kolumny+1]=2;
+                statki[wiersze+1][kolumny+1]=2;
+            }
+            else if(i == 2)
+            {
+                statki[wiersze][kolumny-1]=2;
+                statki[wiersze-1][kolumny-1]=2;
+                statki[wiersze+1][kolumny-1]=2;
+            }
+            kolumny=kolumny-1;
+        }
+    }
+}
+
+
+function dwojka()   //2-masztowiec
+{
+    var kolumny,wiersze,pp;
+    pp=losowanie_pion_poziom();
+                        //ustalanie współrzędnych statku
+    if(pp == 1)         // umiejscowienie W PIONIE
+    {
+        do
+        {
+            kolumny=Math.floor((Math.random() * 10) + 1);//((rand()%10)+1);
+            wiersze=Math.floor((Math.random() * 9) + 2);//((rand()%9)+2);
+        }
+        while(statki[wiersze][kolumny] == 1 || statki[wiersze][kolumny] == 2 || statki[wiersze-1][kolumny] == 1 || statki[wiersze-1][kolumny] == 2);
+
+        for(var i=0;i<2;i++)
+        {
+            statki[wiersze][kolumny]=1;             //TWORZENIE STATKU
+            statki[wiersze][kolumny-1]=2;
+            statki[wiersze][kolumny+1]=2;
+            if(i == 0)
+            {
+                statki[wiersze+1][kolumny]=2;
+                statki[wiersze+1][kolumny+1]=2;
+                statki[wiersze+1][kolumny-1]=2;
+            }
+            else if(i == 1)
+            {
+                statki[wiersze-1][kolumny]=2;
+                statki[wiersze-1][kolumny+1]=2;
+                statki[wiersze-1][kolumny-1]=2;
+            }
+            wiersze=wiersze-1;
+        }
+    }
+    else if(pp == 0)            // umiejscowienie W POZIOMIE
+    {
+        do
+        {
+            kolumny=Math.floor((Math.random() * 9) + 2);//((rand()%9)+2);
+            wiersze=Math.floor((Math.random() * 10) + 1);//((rand()%10)+1);
+        }
+        while(statki[wiersze][kolumny] == 1 || statki[wiersze][kolumny] == 2 || statki[wiersze][kolumny-1] == 1 || statki[wiersze][kolumny-1] == 2);
+
+        for(var i=0;i<2;i++)
+        {
+            statki[wiersze][kolumny]=1;         //TWORZENIE STATKU
+            statki[wiersze-1][kolumny]=2;
+            statki[wiersze+1][kolumny]=2;
+            if(i == 0)
+            {
+                statki[wiersze][kolumny+1]=2;
+                statki[wiersze-1][kolumny+1]=2;
+                statki[wiersze+1][kolumny+1]=2;
+            }
+            else if(i == 1)
+            {
+                statki[wiersze][kolumny-1]=2;
+                statki[wiersze-1][kolumny-1]=2;
+                statki[wiersze+1][kolumny-1]=2;
+            }
+            kolumny=kolumny-1;
+        }
+    }
+}
+
+function jedynka()  //1-masztowiec
+{
+    var kolumny,wiersze;
+                        //ustalanie współrzędnych statku
+    do
+    {
+        kolumny=Math.floor((Math.random() * 10) + 1);//((rand()%10)+1);
+        wiersze=Math.floor((Math.random() * 10) + 1);//((rand()%10)+1);
+    }
+    while(statki[wiersze][kolumny] == 1 || statki[wiersze][kolumny] == 2);
+
+    statki[wiersze][kolumny]=1;     //TWORZENIE STATKU
+    statki[wiersze-1][kolumny]=2;
+    statki[wiersze-1][kolumny-1]=2;
+    statki[wiersze-1][kolumny+1]=2;
+    statki[wiersze+1][kolumny-1]=2;
+    statki[wiersze+1][kolumny+1]=2;
+    statki[wiersze+1][kolumny]=2;
+    statki[wiersze][kolumny-1]=2;
+    statki[wiersze][kolumny+1]=2;
+
+}
+
+var statki = [];    // Deklaracja tablicy 2-wymiarowej, każdy wymiar posiada 12 pól (zmienna globalna) dla położenia statków
+for(var i=0;i<12;i++)
+    statki[i]=[0,0,0,0,0,0,0,0,0,0,0,0];
+
+czworka(statki); // umiejscowienie w tablicy 4-masztowca (1 szt.)
+for(var i=0;i<2;i++)
+    trojka(statki); // umiejscowienie 3-masztowca (2 szt.)
+for(var i=0;i<3;i++)
+    dwojka(statki); // umiejscowienie 2-masztowca (3 szt.)
+for(var i=0;i<4;i++)
+    jedynka(statki);    // umiejscowienie 1-masztowca (4 szt.)
+
+ */
