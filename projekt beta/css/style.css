@@ -86,3 +86,26 @@ input[type="checkbox"], input[type="radio"] {
     width: 20px;
     height: 20px;
 }
+
+.lng-btn {
+    margin-right:3%;
+    margin-left: 3%;
+}
+
+#pl{
+    width:50px;
+    height:40px;
+    margin-right:5px;
+    background-image: url(../img/WhatToDo/rsz_1flaga-polski-250x156.jpg)   ;
+    background-size: cover;
+
+}
+
+#en{
+    width:50px;
+    height:40px;
+    margin-right:5px;
+    background-image: url(../img/WhatToDo/rsz_british-flag-graphic.jpg)   ;
+    background-size: cover;
+
+}
