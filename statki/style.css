@@ -1,0 +1,26 @@
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans:700';
+
+body {
+    background-image: url("image/water.jpg");
+    position: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+div {
+    display: inline-block;
+}
+
+#board {
+
+}
+
+.orders {
+    margin: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    color: rgba(0, 10, 39, 0.96);
+}
+
