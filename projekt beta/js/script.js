@@ -137,8 +137,9 @@ function get_calendar(day_no, days) {
          'terms':'Terms and Conditions',
          'mail':'Your email',
          'msg':'Message',
-         'spam':"Don't like the spam? </br> Neither do we! Email us only if you want to hear back from us:"
-
+         'spam':"Don't like the spam? </br> Neither do we! Email us only if you want to hear back from us:",
+         'placeholder' :"So that we know who to reply to",
+         'placeholder1' : "Here you can be creative'"
      },
 
      'pl' :{
@@ -166,9 +167,9 @@ function get_calendar(day_no, days) {
          'terms':'Warunki korzystania',
          'mail':'Twój email',
          'msg':'Wiadomość',
-         'spam':"Nie lubisz spamu ? </br> My tak samo ! Pisz do nas tylko jeśli chcesz żebyśmy sie do Ciebie odezwali !"
-
-
+         'spam':"Nie lubisz spamu ? </br> My tak samo ! Pisz do nas tylko jeśli chcesz żebyśmy sie do Ciebie odezwali !",
+         'placeholder' :"Tutaj wpisuje sie adress email",
+         'placeholder1' : "Napisz do nas !"
      }
 
 
@@ -179,19 +180,11 @@ function get_calendar(day_no, days) {
  $(function () {
      $('.translate').click(function(){
          var $lang = $(this).attr('id');
-         var $email_input = $('.email');
-         var $msg_input = $('.message');
 
-         if ( $($lang).attr('id')  == 'pl' ) {
-                $email_input.attr('placeholder','Tutaj wpisuje sie adress email');
-                $msg_input.attr('placeholder','Napisz do nas !');
-         } else {
-             $email_input.attr('placeholder','So that we know who to reply to');
-             $msg_input.attr('placeholder','Here you can be creative');
-         }
 
          $('.lang').each(function (index,element) {
              $(this).html(language_array[$lang][$(this).attr('key')]);
+             $(this).attr('placeholder', language_array[$lang][$(this).attr('key')])
          });
      });
  });
